@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary */
+  --color-primary: #005ab7;
+  --color-primary-container: #0072e5;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fefcff;
+  --color-on-primary-fixed: #001b3f;
+  --color-on-primary-fixed-variant: #004590;
+  --color-primary-fixed: #d7e2ff;
+  --color-primary-fixed-dim: #abc7ff;
+  --color-inverse-primary: #abc7ff;
+
+  /* Secondary */
+  --color-secondary: #405e94;
+  --color-secondary-container: #a3c1fd;
+  --color-secondary-fixed: #d7e2ff;
+  --color-secondary-fixed-dim: #abc7ff;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #2f4e83;
+  --color-on-secondary-fixed: #001b3f;
+  --color-on-secondary-fixed-variant: #26467a;
+
+  /* Tertiary */
+  --color-tertiary: #bb0021;
+  --color-tertiary-container: #e61730;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #fffbff;
+  --color-tertiary-fixed: #ffdad7;
+  --color-tertiary-fixed-dim: #ffb3af;
+  --color-on-tertiary-fixed: #410005;
+  --color-on-tertiary-fixed-variant: #930018;
+
+  /* Error */
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  /* Surface */
+  --color-surface: #f8f9fa;
+  --color-surface-dim: #d9dadb;
+  --color-surface-bright: #f8f9fa;
+  --color-surface-tint: #005cbc;
+  --color-surface-variant: #e1e3e4;
+  --color-surface-container: #edeeef;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container-high: #e7e8e9;
+  --color-surface-container-highest: #e1e3e4;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #191c1d;
+  --color-on-surface-variant: #414754;
+  --color-inverse-surface: #2e3132;
+  --color-inverse-on-surface: #f0f1f2;
+
+  /* Outline */
+  --color-outline: #717786;
+  --color-outline-variant: #c1c6d7;
+
+  /* Background */
+  --color-background: #f8f9fa;
+  --color-on-background: #191c1d;
+
+  /* Font families */
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+  --font-sans: "Manrope", sans-serif;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+}
+
+.editorial-gradient {
+  background: linear-gradient(135deg, #005ab7 0%, #0072e5 100%);
+}
