@@ -72,6 +72,9 @@ export default function Members() {
                     <th className="text-left px-6 py-4 font-bold text-on-surface text-xs uppercase tracking-widest">
                       {lang === "tr" ? "Universite" : "University"}
                     </th>
+                    <th className="text-left px-6 py-4 font-bold text-on-surface text-xs uppercase tracking-widest">
+                      Email
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -79,6 +82,11 @@ export default function Members() {
                     <tr key={i} className="border-t border-outline-variant/10 hover:bg-surface-container-low transition-colors">
                       <td className="px-6 py-4 text-on-surface font-medium">{rep.name}</td>
                       <td className="px-6 py-4 text-on-surface-variant">{rep.university}</td>
+                      <td className="px-6 py-4">
+                        <a href={`mailto:${rep.email}`} className="text-primary hover:underline text-sm font-medium">
+                          {rep.email}
+                        </a>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
