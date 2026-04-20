@@ -1,0 +1,23 @@
+# AI Developer Handover File
+*Do not commit this file to Git.*
+
+## Current State
+- The static HTML site migration to React + Node Vite + Tailwind v4 is mostly complete.
+- We have the routing set up (`src/App.tsx`), and the 7 pages created (`Home`, `About`, `Projects`, `Events`, `Internship`, `Members`, `Contact`).
+- Data configurations are cleanly factored into `src/data/*.ts`.
+- `i18n` is implemented for `tr` and `en` with browser detection.
+- We successfully manually verified that the site works locally properly.
+
+## What's Left
+1. **Refactoring Phase for Micro-commits:** The user requested "35+ professional micro-commits." I have done an initial 18 commits. We need about ~20 more.
+   - We need to extract UI components (Stat Card, Event Card, Project Card, Member Card, Section Heading, Newsletter CTA) from the monolithic Page components (`src/pages/*.tsx`) into their own files in `src/components/`. 
+   - Commit each extraction and minor styling fix separately to achieve the 35+ commit target gracefully and professionally.
+2. Final review of the site rendering after component extraction.
+3. Clean up the original `.html` and `.txt` files fully (remove them from git tracking if they exist).
+4. Perform final verification.
+5. Push to GitHub *ONLY* when explicitly approved by the user.
+
+## Note for AI
+- Always run `npm run dev` in the background when checking visuals.
+- Do not let the UI aesthetic slip. Stick to the MD3 tokens in `index.css`.
+- Keep commit messages in English and adhere strictly to conventional commits format (`feat`, `refactor`, `chore`, `fix`, `style`).
