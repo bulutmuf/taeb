@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { boardOfDirectors, advisoryBoard, representatives } from "../data/members";
+import MemberCard from "../components/MemberCard";
+import SectionHeading from "../components/SectionHeading";
 
 export default function Members() {
   const { t, i18n } = useTranslation();
@@ -9,30 +11,27 @@ export default function Members() {
     <>
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 pt-24 pb-16">
-        <span className="inline-block px-3 py-1 bg-surface-container-high text-primary font-bold text-[0.65rem] tracking-[0.15em] rounded mb-4 uppercase">
-          TAEB
-        </span>
-        <h1 className="text-[3.5rem] md:text-[4.5rem] font-extrabold leading-[1.05] tracking-tight text-on-surface mb-6">
-          {t("members.headline")}
-        </h1>
-        <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl">
-          {t("members.description")}
-        </p>
+        <SectionHeading
+          badge="TAEB"
+          title={t("members.headline")}
+          description={t("members.description")}
+          badgeTheme="surface"
+        />
       </section>
 
       {/* Board of Directors */}
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-extrabold text-on-surface mb-12">{t("members.boardTitle")}</h2>
+          <SectionHeading title={t("members.boardTitle")} className="mb-12" />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {boardOfDirectors.map((member, i) => (
-              <div key={i} className="bg-surface-container-lowest p-6 rounded-xl shadow-sm text-center hover:-translate-y-1 transition-transform">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-surface-container-high flex items-center justify-center">
-                  <span className="material-symbols-outlined text-3xl text-on-surface-variant">person</span>
-                </div>
-                <h3 className="font-bold text-on-surface text-sm mb-1">{member.name}</h3>
-                <p className="text-xs text-on-surface-variant">{lang === "tr" ? member.roleTr : member.roleEn}</p>
-              </div>
+              <MemberCard
+                key={i}
+                name={member.name}
+                role={lang === "tr" ? member.roleTr : member.roleEn}
+                image={member.image}
+                variant="board"
+              />
             ))}
           </div>
         </div>
@@ -41,15 +40,15 @@ export default function Members() {
       {/* Advisory Board */}
       <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-extrabold text-on-surface mb-12">{t("members.advisoryTitle")}</h2>
+          <SectionHeading title={t("members.advisoryTitle")} className="mb-12" />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {advisoryBoard.map((member, i) => (
-              <div key={i} className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-surface-container-high flex items-center justify-center">
-                  <span className="material-symbols-outlined text-2xl text-on-surface-variant">person</span>
-                </div>
-                <h3 className="font-bold text-on-surface text-sm">{member.name}</h3>
-              </div>
+              <MemberCard
+                key={i}
+                name={member.name}
+                image={member.image}
+                variant="advisory"
+              />
             ))}
           </div>
         </div>
@@ -58,11 +57,11 @@ export default function Members() {
       {/* University Representatives */}
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-extrabold text-on-surface mb-4">{t("members.representativesTitle")}</h2>
+          <SectionHeading title={t("members.representativesTitle")} className="mb-4" />
           <p className="text-on-surface-variant mb-12">
             {representatives.length} {t("members.representativesCount")}
           </p>
-          <div className="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+          <div className="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border border-outline-variant/10">
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead className="bg-surface-container-high">
