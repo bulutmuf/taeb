@@ -16,6 +16,18 @@
   --color-secondary: #405e94;
   --color-secondary-container: #a3c1fd;
   --color-secondary-fixed: #d7e2ff;
+  --animate-fade-in-up: fade-in-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   --color-secondary-fixed-dim: #abc7ff;
   --color-on-secondary: #ffffff;
   --color-on-secondary-container: #2f4e83;
