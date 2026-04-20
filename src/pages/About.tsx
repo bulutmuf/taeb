@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import SectionHeading from "../components/SectionHeading";
 
 export default function About() {
   const { t } = useTranslation();
@@ -9,25 +10,23 @@ export default function About() {
       <section className="relative bg-surface py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-block px-3 py-1 bg-tertiary text-white text-[10px] font-bold tracking-[0.1em] mb-6 rounded-sm uppercase">
-              {t("about.badge")}
-            </span>
-            <h1 className="text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-on-surface mb-8">
-              {t("about.headline")} <span className="text-primary">{t("about.headlineAccent")}</span>
-            </h1>
-            <p className="text-on-surface-variant text-lg leading-relaxed max-w-lg mb-10">
-              {t("about.description")}
-            </p>
+            <SectionHeading
+              badge={t("about.badge")}
+              badgeTheme="tertiary"
+              title={t("about.headline")}
+              titleAccent={t("about.headlineAccent")}
+              description={t("about.description")}
+            />
           </div>
           <div className="relative">
             <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover relative z-0"
                 alt="International cooperation"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaRJgWd0erUB2GBKflieqwbBymLTGCiWsLYk7Gzih5Qa8wHVneqHoRsRUQ6aT5jPdArQUyKfOJIThEZqsmY5PCobkkvBl1p31fuzMMBfr_U5LoTM61fhlYVMasWFcwHLPmLhvP1wcBip0-t4tRNyxFL7wIuCIw80rSvEO9fNvPOkLZjyrEYq7eSAcJESeXZ-hZRSt_ZaxLNxr_-TSEOJnzepFmkDG2KxIbDCipPeiQyL_8YQ_NWja60t5T2o6DBq-Fp5chhyQsvZY"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-surface-container-lowest p-8 shadow-lg max-w-[240px]">
+            <div className="absolute -bottom-6 -left-6 bg-surface-container-lowest p-8 shadow-lg max-w-[240px] z-10">
               <div className="flex items-center gap-2 mb-2">
                 <span className="material-symbols-outlined text-tertiary" style={{ fontVariationSettings: "'FILL' 1" }}>
                   stars
@@ -54,12 +53,12 @@ export default function About() {
               <p className="text-on-surface-variant text-sm leading-loose">{t("about.historyDescription")}</p>
             </div>
             <div className="md:w-2/3 space-y-16">
-              <div className="bg-surface-container-lowest p-12 shadow-sm rounded-lg border-l-4 border-primary">
+              <div className="bg-surface-container-lowest p-12 shadow-sm rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow">
                 <h3 className="text-5xl font-black text-surface-container-highest mb-6">{t("about.year2014")}</h3>
                 <h4 className="text-xl font-bold mb-4">{t("about.year2014Title")}</h4>
                 <p className="text-on-surface-variant leading-relaxed">{t("about.year2014Desc")}</p>
               </div>
-              <div className="bg-surface-container-lowest p-12 shadow-sm rounded-lg border-l-4 border-tertiary">
+              <div className="bg-surface-container-lowest p-12 shadow-sm rounded-lg border-l-4 border-tertiary hover:shadow-md transition-shadow">
                 <h3 className="text-5xl font-black text-surface-container-highest mb-6">{t("about.year2026")}</h3>
                 <h4 className="text-xl font-bold mb-4">{t("about.year2026Title")}</h4>
                 <p className="text-on-surface-variant leading-relaxed">{t("about.year2026Desc")}</p>
@@ -73,21 +72,21 @@ export default function About() {
       <section className="bg-surface py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div className="md:col-span-2 bg-primary p-10 flex flex-col justify-between h-64 rounded-xl">
+            <div className="md:col-span-2 bg-primary p-10 flex flex-col justify-between h-64 rounded-xl hover:-translate-y-1 transition-transform">
               <span className="material-symbols-outlined text-white text-4xl">language</span>
               <div>
                 <p className="text-white/80 text-sm font-medium uppercase tracking-widest mb-1">{t("about.operationalScope")}</p>
                 <h3 className="text-white text-3xl font-bold">{t("about.twoCountries")}</h3>
               </div>
             </div>
-            <div className="bg-surface-container-high p-10 flex flex-col justify-between h-64 rounded-xl">
+            <div className="bg-surface-container-high p-10 flex flex-col justify-between h-64 rounded-xl hover:-translate-y-1 transition-transform">
               <span className="material-symbols-outlined text-tertiary text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>groups</span>
               <div>
                 <p className="text-on-surface-variant text-sm font-medium uppercase tracking-widest mb-1">{t("about.memberCount")}</p>
                 <h3 className="text-on-surface text-3xl font-bold">{t("about.memberCountValue")}</h3>
               </div>
             </div>
-            <div className="bg-surface-container-lowest p-10 flex flex-col justify-between h-64 rounded-xl shadow-sm">
+            <div className="bg-surface-container-lowest p-10 flex flex-col justify-between h-64 rounded-xl shadow-sm hover:-translate-y-1 transition-transform">
               <span className="material-symbols-outlined text-primary text-4xl">event_available</span>
               <div>
                 <p className="text-on-surface-variant text-sm font-medium uppercase tracking-widest mb-1">{t("about.annualEvents")}</p>
@@ -110,7 +109,7 @@ export default function About() {
                   </div>
                   <h3 className="text-2xl font-bold">{t("about.missionTitle")}</h3>
                 </div>
-                <p className="text-on-surface-variant leading-loose italic">{t("about.missionText")}</p>
+                <p className="text-on-surface-variant leading-loose italic">"{t("about.missionText")}"</p>
               </div>
               <div>
                 <div className="flex items-center gap-4 mb-6">
@@ -119,7 +118,7 @@ export default function About() {
                   </div>
                   <h3 className="text-2xl font-bold">{t("about.visionTitle")}</h3>
                 </div>
-                <p className="text-on-surface-variant leading-loose italic">{t("about.visionText")}</p>
+                <p className="text-on-surface-variant leading-loose italic">"{t("about.visionText")}"</p>
               </div>
             </div>
           </div>
@@ -132,7 +131,7 @@ export default function About() {
           <p className="text-xs font-bold tracking-[0.2em] text-outline mb-12 uppercase">{t("about.partners")}</p>
           <div className="flex flex-wrap justify-center gap-16 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
             {["ACADEMIA", "TECH-CORP", "GLOBAL-BRIDGE", "INNOVA-US", "TURK-USA"].map((name) => (
-              <div key={name} className="font-black text-2xl text-on-surface-variant">{name}</div>
+              <div key={name} className="font-black text-2xl text-on-surface-variant cursor-pointer">{name}</div>
             ))}
           </div>
         </div>
