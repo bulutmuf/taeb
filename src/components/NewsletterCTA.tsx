@@ -41,6 +41,7 @@ export default function NewsletterCTA({
                 placeholder={t(placeholderKey)}
                 type="email"
                 required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               />
               <button
                 type="submit"

@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { upcomingInterns, pastInterns, testimonials } from "../data/interns";
 import SectionHeading from "../components/SectionHeading";
+import PageSEO from "../components/PageSEO";
 import MemberCard from "../components/MemberCard";
 import TestimonialCard from "../components/TestimonialCard";
 
@@ -9,6 +10,7 @@ export default function Internship() {
 
   return (
     <>
+      <PageSEO titleKey="seo.internshipTitle" descriptionKey="seo.internshipDesc" />
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-16">
         <SectionHeading
           badge="TAEB"

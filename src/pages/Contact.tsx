@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { contactInfo } from "../data/contact";
 import SectionHeading from "../components/SectionHeading";
 import ContactCard from "../components/ContactCard";
+import PageSEO from "../components/PageSEO";
 
 export default function Contact() {
   const { t } = useTranslation();

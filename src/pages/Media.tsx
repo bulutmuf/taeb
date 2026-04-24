@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import BlogSection from "../components/media/BlogSection";
 import MagazineSection from "../components/media/MagazineSection";
 import WebinarSection from "../components/media/WebinarSection";
+import PageSEO from "../components/PageSEO";
 
 export default function Media() {
   const { t } = useTranslation();

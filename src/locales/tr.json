@@ -163,5 +163,25 @@
     "copyright": "2026 TAEB",
     "established": "EST. 2014",
     "allRights": "Tüm hakları saklıdır."
+  },
+  "seo": {
+    "homeTitle": "TAEB - Türk Amerikan Eczacılar Birliği",
+    "homeDesc": "Türkiye ve ABD'deki eczacılar arasındaki iş birliğinin merkezi. Mesleki gelişim ve etkinlikler için TAEB topluluğuna katılın.",
+    "aboutTitle": "Hakkımızda - TAEB",
+    "aboutDesc": "Türk Amerikan Eczacılar Birliği'nin tarihçesini, misyonunu ve vizyonunu keşfedin.",
+    "projectsTitle": "Projelerimiz - TAEB",
+    "projectsDesc": "Sağlık profesyonelleri ve eczacılar için yürütülen projeler ve programlar.",
+    "eventsTitle": "Etkinlikler - TAEB",
+    "eventsDesc": "Eczacılar için profesyonel etkinlikler, seminerler ve networking fırsatları.",
+    "internshipTitle": "Staj Programı - TAEB",
+    "internshipDesc": "Eczacılık öğrencileri için ABD'de burslu staj imkanları.",
+    "membersTitle": "Ekibimiz - TAEB",
+    "membersDesc": "TAEB'in yönetim kurulu ve temsilcileri ile tanışın.",
+    "contactTitle": "İletişim - TAEB",
+    "contactDesc": "Türk Amerikan Eczacılar Birliği ile iletişime geçin.",
+    "mediaTitle": "Medya & Blog - TAEB",
+    "mediaDesc": "TAEB topluluğundan en son haberler, webinarlar ve eczacılık dergileri.",
+    "membershipTitle": "Üyelik Başvurusu - TAEB",
+    "membershipDesc": "Türk Amerikan Eczacılar Birliği üyesi olmak için başvuru adımlarını takip edin."
   }
 }

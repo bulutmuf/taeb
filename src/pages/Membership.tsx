@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import SectionHeading from "../components/SectionHeading";
+import PageSEO from "../components/PageSEO";
 
 export default function Membership() {
   const { t } = useTranslation();

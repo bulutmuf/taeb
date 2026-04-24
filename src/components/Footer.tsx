@@ -75,6 +75,7 @@ export default function Footer() {
               placeholder={t("footer.emailPlaceholder")}
               type="email"
               required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
             <button 
               type="submit"

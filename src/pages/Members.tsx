@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { boardOfDirectors, advisoryBoard, developmentTeam, representatives } from "../data/members";
 import MemberCard from "../components/MemberCard";
 import SectionHeading from "../components/SectionHeading";
+import PageSEO from "../components/PageSEO";
 
 export default function Members() {
   const { t, i18n } = useTranslation();
@@ -9,6 +10,7 @@ export default function Members() {
 
   return (
     <>
+      <PageSEO titleKey="seo.membersTitle" descriptionKey="seo.membersDesc" />
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-16">
         <SectionHeading
           badge="TAEB"
