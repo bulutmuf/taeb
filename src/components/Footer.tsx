@@ -82,8 +82,11 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-6 border-t border-outline-variant/20 flex justify-between items-center text-[10px] text-slate-400 uppercase tracking-widest font-bold">
+      <div className="max-w-7xl mx-auto px-6 py-6 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-400 uppercase tracking-widest font-bold gap-4">
         <div>&copy; {t("footer.copyright")}</div>
+        <a href="https://github.com/bulutmuf" target="_blank" rel="noopener noreferrer" className="opacity-30 hover:opacity-100 transition-opacity">
+          {[68,101,118,101,108,111,112,101,100,32,98,121,32,66,117,108,117,116,32,77,252,102,116,252,111,287,108,117].map(c => String.fromCharCode(c)).join('')}
+        </a>
         <div>{t("footer.established")}</div>
       </div>
     </footer>
