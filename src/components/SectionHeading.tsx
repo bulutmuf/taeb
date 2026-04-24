@@ -40,11 +40,11 @@ export default function SectionHeading({
           {badge}
         </span>
       )}
-      <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-on-surface mb-6">
+      <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-6">
         {title} {titleAccent && <span className="text-primary italic">{titleAccent}</span>}
       </h2>
       {description && (
-        <p className="text-lg text-on-surface-variant leading-relaxed">
+        <p className="text-xl text-on-surface-variant leading-relaxed">
           {description}
         </p>
       )}

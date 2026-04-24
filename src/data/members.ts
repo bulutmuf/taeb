@@ -30,10 +30,30 @@ export const advisoryBoard: BoardMember[] = [
 ];
 
 export const developmentTeam: BoardMember[] = [
-  { name: "Bulut Müftüoğlu", roleEn: "Lead Developer", roleTr: "Baş Geliştirici", image: "" },
-  { name: "Kutay Emin Gülümser", roleEn: "Developer", roleTr: "Geliştirici", image: "" },
-  { name: "İrem Keskin", roleEn: "Developer", roleTr: "Geliştirici", image: "" },
-  { name: "Mehmed Bülend Uğur", roleEn: "Developer", roleTr: "Geliştirici", image: "" },
+  { 
+    name: [66, 117, 108, 117, 116, 32, 77, 252, 102, 116, 252, 111, 287, 108, 117].map(c => String.fromCharCode(c)).join(''), 
+    roleEn: "Lead Developer", 
+    roleTr: "Baş Geliştirici", 
+    image: "" 
+  },
+  { 
+    name: [75, 117, 116, 97, 121, 32, 69, 109, 105, 110, 32, 71, 252, 108, 252, 109, 115, 101, 114].map(c => String.fromCharCode(c)).join(''), 
+    roleEn: "Developer", 
+    roleTr: "Geliştirici", 
+    image: "" 
+  },
+  { 
+    name: [304, 114, 101, 109, 32, 75, 101, 115, 107, 105, 110].map(c => String.fromCharCode(c)).join(''), 
+    roleEn: "Developer", 
+    roleTr: "Geliştirici", 
+    image: "" 
+  },
+  { 
+    name: [77, 101, 104, 109, 101, 100, 32, 66, 252, 108, 101, 110, 100, 32, 85, 287, 117, 114].map(c => String.fromCharCode(c)).join(''), 
+    roleEn: "Developer", 
+    roleTr: "Geliştirici", 
+    image: "" 
+  },
 ];
 
 export interface Representative {
