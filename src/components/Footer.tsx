@@ -63,16 +63,26 @@ export default function Footer() {
           <div className="text-xs font-bold text-on-surface uppercase tracking-widest">
             {t("footer.newsletter")}
           </div>
-          <div className="relative">
+          <form 
+            action="https://formsubmit.co/bulutmuftuoglu@gmail.com" 
+            method="POST"
+            className="relative"
+          >
+            <input type="hidden" name="_subject" value="Newsletter Subscription (Footer)!" />
             <input
+              name="email"
               className="w-full bg-white border-0 border-b-2 border-outline-variant focus:border-primary focus:outline-none px-0 py-3 text-sm"
               placeholder={t("footer.emailPlaceholder")}
               type="email"
+              required
             />
-            <button className="absolute right-0 top-1/2 -translate-y-1/2 text-primary font-bold text-xs uppercase">
+            <button 
+              type="submit"
+              className="absolute right-0 top-1/2 -translate-y-1/2 text-primary font-bold text-xs uppercase"
+            >
               {t("footer.subscribeButton")}
             </button>
-          </div>
+          </form>
           <div className="pt-4 flex flex-col gap-2">
             <div className="text-slate-900 font-semibold text-sm">{t("footer.copyright")}</div>
             <a href="#" className="text-slate-500 text-xs hover:text-primary transition-colors">

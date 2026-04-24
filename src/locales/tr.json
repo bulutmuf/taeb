@@ -117,7 +117,9 @@
     "newsletterDescription": "Yeni etkinliklerden, seminerlerden ve fırsatlardan ilk siz haberdar olun. Bültenimize kayıt olarak topluluğumuzun kalbinde yer alın.",
     "emailPlaceholder": "E-posta adresiniz",
     "subscribe": "ABONE OL",
-    "registerNow": "KAYIT OL"
+    "registerNow": "KAYIT OL",
+    "sponsorsTitle": "Sponsorlarımız",
+    "sponsorsDescription": "Sağlık sektöründe fark yaratan bu değerli kuruluşlarla iş birliği yapmaktan gurur duyuyoruz."
   },
   "internship": {
     "headline": "Staj Programı",

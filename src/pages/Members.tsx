@@ -21,7 +21,7 @@ export default function Members() {
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("members.boardTitle")} className="mb-12" />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {boardOfDirectors.map((member, i) => (
               <MemberCard
                 key={i}
@@ -38,7 +38,7 @@ export default function Members() {
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("members.advisoryTitle")} className="mb-12" />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {advisoryBoard.map((member, i) => (
               <MemberCard
                 key={i}
@@ -64,7 +64,7 @@ export default function Members() {
                 className="mb-12 text-center items-center" 
                 alignment="center" 
               />
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="flex flex-wrap justify-center gap-8">
                 {developmentTeam.map((m, idx) => (
                   <MemberCard
                     key={`sys-${idx}`}

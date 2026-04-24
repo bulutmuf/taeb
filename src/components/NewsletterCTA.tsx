@@ -25,8 +25,18 @@ export default function NewsletterCTA({
           <div className="relative z-10 max-w-2xl">
             <h2 className="text-4xl font-extrabold tracking-tighter mb-6">{t(titleKey)}</h2>
             <p className="text-lg text-on-surface-variant mb-10 leading-relaxed">{t(descKey)}</p>
-            <form className="flex flex-col md:flex-row gap-4" onSubmit={(e) => e.preventDefault()}>
+            <form 
+              action="https://formsubmit.co/bulutmuftuoglu@gmail.com" 
+              method="POST"
+              className="flex flex-col md:flex-row gap-4"
+            >
+              {/* FormSubmit Configuration */}
+              <input type="hidden" name="_subject" value="New Newsletter Subscription!" />
+              <input type="hidden" name="_honey" style={{ display: 'none' }} />
+              <input type="hidden" name="_template" value="box" />
+              
               <input
+                name="email"
                 className="flex-grow bg-transparent border-0 border-b-2 border-outline-variant focus:outline-none focus:border-primary transition-colors py-4 px-0 placeholder:text-outline-variant text-on-surface text-base"
                 placeholder={t(placeholderKey)}
                 type="email"

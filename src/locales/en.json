@@ -117,7 +117,9 @@
     "newsletterDescription": "Be the first to know about new events, seminars, and opportunities. Subscribe to our newsletter to be at the heart of our community.",
     "emailPlaceholder": "Your email address",
     "subscribe": "SUBSCRIBE",
-    "registerNow": "REGISTER NOW"
+    "registerNow": "REGISTER NOW",
+    "sponsorsTitle": "Our Sponsors",
+    "sponsorsDescription": "We are proud to collaborate with these leading organizations in the healthcare sector."
   },
   "internship": {
     "headline": "Internship Program",
