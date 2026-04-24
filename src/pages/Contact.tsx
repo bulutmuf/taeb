@@ -24,7 +24,16 @@ export default function Contact() {
             {/* Contact Form */}
             <div className="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border border-outline-variant/10">
               <h2 className="text-2xl font-bold text-on-surface mb-8">{t("contact.formTitle")}</h2>
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <form 
+                className="space-y-6" 
+                action="https://formsubmit.co/support@taeb.us" 
+                method="POST"
+              >
+                {/* FormSubmit Configuration */}
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="New Contact Request from TAEB Website" />
+                <input type="hidden" name="_template" value="table" />
+                
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-2">
@@ -32,6 +41,7 @@ export default function Contact() {
                     </label>
                     <input
                       type="text"
+                      name="First Name"
                       className="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:outline-none py-3 px-0 text-sm transition-colors"
                       required
                     />
@@ -42,6 +52,7 @@ export default function Contact() {
                     </label>
                     <input
                       type="text"
+                      name="Last Name"
                       className="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:outline-none py-3 px-0 text-sm transition-colors"
                       required
                     />
@@ -53,6 +64,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     className="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:outline-none py-3 px-0 text-sm transition-colors"
                     required
                   />
@@ -62,6 +74,7 @@ export default function Contact() {
                     {t("contact.message")} *
                   </label>
                   <textarea
+                    name="Message"
                     rows={5}
                     className="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:outline-none py-3 px-0 text-sm resize-none transition-colors"
                     required
