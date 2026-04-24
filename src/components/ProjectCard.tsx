@@ -1,5 +1,4 @@
 import type { Project } from "../data/projects";
-import { secureContent } from "../utils/security";
 
 interface ProjectCardProps {
   project: Project;
