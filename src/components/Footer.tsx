@@ -20,7 +20,7 @@ export default function Footer() {
               <span className="material-symbols-outlined">public</span>
             </a>
             <a
-              href="#"
+              href="mailto:support@taeb.us"
               className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"
             >
               <span className="material-symbols-outlined">mail</span>
@@ -64,7 +64,7 @@ export default function Footer() {
             {t("footer.newsletter")}
           </div>
           <form 
-            action="https://formsubmit.co/bulutmuftuoglu@gmail.com" 
+            action="https://formsubmit.co/support@taeb.us" 
             method="POST"
             className="relative"
           >

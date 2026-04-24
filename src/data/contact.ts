@@ -6,6 +6,6 @@ export interface ContactInfo {
 
 export const contactInfo: ContactInfo = {
   phone: "+1 (908) 313-8133",
-  email: "turkamerikaneczacilaribirligi@gmail.com",
+  email: "support@taeb.us",
   address: "4383 Route 27 Princeton, NJ, USA",
 };
