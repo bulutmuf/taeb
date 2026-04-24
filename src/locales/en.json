@@ -8,7 +8,23 @@
     "members": "MEMBERS",
     "contact": "CONTACT",
     "contactUs": "CONTACT US",
-    "membership": "MEMBERSHIP"
+    "membership": "MEMBERSHIP",
+    "media": "MEDIA"
+  },
+  "media": {
+    "badge": "CONTENT & RESOURCES",
+    "headlineTitle": "Access",
+    "headlineAccent": "Knowledge.",
+    "description": "Explore our digital archive, from training sessions to current pharmacy blog posts and previous magazine issues.",
+    "blogBadge": "BLOG",
+    "blogTitle": "Latest Articles",
+    "blogDescription": "Sectoral developments, academic papers, and news from the pharmacy world.",
+    "magazineBadge": "MAGAZINE",
+    "magazineTitle": "Past Issues",
+    "magazineDescription": "Read all published TAEB Journal issues from our archive in PDF format.",
+    "webinarBadge": "WEBINAR",
+    "webinarTitle": "Webinar Recordings",
+    "webinarDescription": "Online training, seminar, and interview recordings you missed or want to rewatch."
   },
   "home": {
     "badge": "Beyond a Bridge, a Partnership",

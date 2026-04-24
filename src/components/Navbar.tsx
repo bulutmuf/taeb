@@ -8,6 +8,7 @@ const navLinks = [
   { to: "/projects", key: "nav.projects" },
   { to: "/events", key: "nav.events" },
   { to: "/internship", key: "nav.internship" },
+  { to: "/media", key: "nav.media" },
 ];
 
 export default function Navbar() {

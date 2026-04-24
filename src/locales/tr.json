@@ -8,7 +8,23 @@
     "members": "ÜYELER",
     "contact": "İLETİŞİM",
     "contactUs": "BİZE ULAŞIN",
-    "membership": "ÜYELİK"
+    "membership": "ÜYELİK",
+    "media": "MEDYA"
+  },
+  "media": {
+    "badge": "İÇERİK & KAYNAKLAR",
+    "headlineTitle": "Bilgiye",
+    "headlineAccent": "Ulaşın.",
+    "description": "TAEB'in düzenlediği eğitimlerden, güncel eczacılık blog yazılarımıza ve geçmiş dergi sayılarımıza kadar tüm dijital arşivimize buradan erişebilirsiniz.",
+    "blogBadge": "BLOG",
+    "blogTitle": "En Güncel Yazılar",
+    "blogDescription": "Sektörel gelişmeler, akademik makaleler ve eczacılık dünyasından haberler.",
+    "magazineBadge": "DERGİ",
+    "magazineTitle": "Geçmiş Dergilerimiz",
+    "magazineDescription": "Yayınlanmış tüm TAEB Journal sayılarını arşivimizden PDF formatında okuyabilirsiniz.",
+    "webinarBadge": "WEBİNAR",
+    "webinarTitle": "Webinar Kayıtları",
+    "webinarDescription": "Kaçırdığınız veya tekrar izlemek istediğiniz çevrimiçi eğitim, seminer ve söyleşi kayıtlarımız."
   },
   "home": {
     "badge": "Köprüden Öte, Bir Ortaklık",
