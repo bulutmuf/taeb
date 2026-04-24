@@ -9,7 +9,6 @@ export default function Members() {
 
   return (
     <>
-      {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 pt-24 pb-16">
         <SectionHeading
           badge="TAEB"
@@ -19,7 +18,6 @@ export default function Members() {
         />
       </section>
 
-      {/* Board of Directors */}
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("members.boardTitle")} className="mb-12" />
@@ -37,7 +35,6 @@ export default function Members() {
         </div>
       </section>
 
-      {/* Advisory Board */}
       <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("members.advisoryTitle")} className="mb-12" />
@@ -54,7 +51,6 @@ export default function Members() {
         </div>
       </section>
 
-      {/* University Representatives */}
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("members.representativesTitle")} className="mb-4" />

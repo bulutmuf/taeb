@@ -8,7 +8,6 @@ export default function Media() {
 
   return (
     <div className="pt-24 pb-16">
-      {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 mb-20 text-center">
         <span className="inline-block py-1.5 px-4 mb-6 rounded-full text-xs font-bold tracking-widest text-primary bg-primary/10 select-none">
           {t("media.badge")}
@@ -22,7 +21,6 @@ export default function Media() {
         </p>
       </section>
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6">
         <BlogSection />
         <MagazineSection />

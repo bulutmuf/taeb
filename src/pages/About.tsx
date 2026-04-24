@@ -6,7 +6,6 @@ export default function About() {
 
   return (
     <>
-      {/* Hero */}
       <section className="relative bg-surface py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -43,7 +42,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* History */}
       <section className="bg-surface-container-low py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-16">
@@ -68,7 +66,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Stats Bento */}
       <section className="bg-surface py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -97,7 +94,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Mission / Vision */}
       <section className="bg-surface-container-low py-24 border-y border-outline-variant/10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12">
@@ -125,7 +121,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Partners */}
       <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-xs font-bold tracking-[0.2em] text-outline mb-12 uppercase">{t("about.partners")}</p>

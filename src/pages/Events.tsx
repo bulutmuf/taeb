@@ -10,7 +10,6 @@ export default function Events() {
 
   return (
     <>
-      {/* Hero */}
       <section className="relative h-[409px] flex items-center bg-surface overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
@@ -29,7 +28,6 @@ export default function Events() {
         </div>
       </section>
 
-      {/* Featured Upcoming Event */}
       <section className="py-20 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-12 items-stretch">
@@ -87,7 +85,6 @@ export default function Events() {
         </div>
       </section>
 
-      {/* Past Events */}
       <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading
@@ -101,7 +98,6 @@ export default function Events() {
               <EventCard key={event.id} event={event} variant="past" lang={lang} t={t} />
             ))}
 
-            {/* Archive placeholder */}
             <div className="group opacity-40 hover:opacity-100 transition-opacity">
               <div className="aspect-[4/3] flex items-center justify-center rounded-lg mb-6 border-2 border-dashed border-outline-variant bg-surface-container-low">
                 <span className="material-symbols-outlined text-4xl text-outline-variant">history</span>
@@ -115,7 +111,6 @@ export default function Events() {
         </div>
       </section>
 
-      {/* Sponsors Section */}
       <section className="py-24 bg-surface-container-lowest border-t border-surface-container-high/30">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading
@@ -126,7 +121,6 @@ export default function Events() {
           />
 
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            {/* Mock Sponsor Logos using SVG or Images */}
             {[1, 2, 3, 4].map((i) => (
               <div key={i} className="w-32 h-16 flex items-center justify-center hover:scale-110 transition-transform duration-300">
                 <img 
@@ -143,7 +137,6 @@ export default function Events() {
         </div>
       </section>
 
-      {/* Newsletter CTA */}
       <NewsletterCTA
         titleKey="events.newsletterTitle"
         descKey="events.newsletterDescription"

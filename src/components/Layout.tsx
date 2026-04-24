@@ -8,7 +8,6 @@ export default function Layout() {
   const { pathname } = useLocation();
   const { t } = useTranslation();
 
-  // Handle Scroll to Top & Page Title
   useEffect(() => {
     window.scrollTo(0, 0);
 

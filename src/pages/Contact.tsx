@@ -8,7 +8,6 @@ export default function Contact() {
 
   return (
     <>
-      {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 pt-24 pb-16">
         <SectionHeading
           badge="TAEB"
@@ -21,7 +20,6 @@ export default function Contact() {
       <section className="pb-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16">
-            {/* Contact Form */}
             <div className="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border border-outline-variant/10">
               <h2 className="text-2xl font-bold text-on-surface mb-8">{t("contact.formTitle")}</h2>
               <form 
@@ -29,7 +27,6 @@ export default function Contact() {
                 action="https://formsubmit.co/support@taeb.us" 
                 method="POST"
               >
-                {/* FormSubmit Configuration */}
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_subject" value="New Contact Request from TAEB Website" />
                 <input type="hidden" name="_template" value="table" />
@@ -89,7 +86,6 @@ export default function Contact() {
               </form>
             </div>
 
-            {/* Info Cards */}
             <div className="space-y-6">
               <ContactCard
                 icon="call"

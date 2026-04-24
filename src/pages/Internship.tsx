@@ -9,7 +9,6 @@ export default function Internship() {
 
   return (
     <>
-      {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 pt-24 pb-16">
         <SectionHeading
           badge="TAEB"
@@ -19,7 +18,6 @@ export default function Internship() {
         />
       </section>
 
-      {/* Testimonials */}
       <section className="py-20 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("internship.testimonials")} className="mb-12" />
@@ -31,7 +29,6 @@ export default function Internship() {
         </div>
       </section>
 
-      {/* Upcoming Interns */}
       <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("internship.upcomingInterns")} className="mb-4" />
@@ -61,7 +58,6 @@ export default function Internship() {
         </div>
       </section>
 
-      {/* Past Interns */}
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("internship.pastInterns")} className="mb-12" />

@@ -47,7 +47,6 @@ export default function MagazineSection() {
             className="group block rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-outline-variant/10 bg-surface-container-lowest"
           >
             <div className="aspect-[3/4] bg-surface-variant/20 relative overflow-hidden flex items-center justify-center">
-              {/* Fallback pattern in case image doesn't load */}
               <div className="absolute inset-0 opacity-10 flex items-center justify-center">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>

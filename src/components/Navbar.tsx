@@ -26,7 +26,6 @@ export default function Navbar() {
           TAEB
         </NavLink>
 
-        {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <NavLink
@@ -61,7 +60,6 @@ export default function Navbar() {
             {t("nav.contactUs")}
           </NavLink>
 
-          {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden w-10 h-10 flex items-center justify-center text-slate-700"
@@ -74,7 +72,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-surface-container-high px-6 pb-6 space-y-1">
           {navLinks.map((link) => (

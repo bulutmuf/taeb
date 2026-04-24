@@ -8,7 +8,6 @@ export default function Projects() {
 
   return (
     <>
-      {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 pt-24 mb-20">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
           <SectionHeading
@@ -27,7 +26,6 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Projects Grid */}
       <section className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {projects.map((project) => (
@@ -36,7 +34,6 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="max-w-7xl mx-auto px-6 mt-32 mb-24">
         <div className="relative bg-primary-container rounded-2xl p-12 overflow-hidden">
           <div className="absolute inset-0 editorial-gradient opacity-95" />

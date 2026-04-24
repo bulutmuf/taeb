@@ -11,7 +11,6 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero */}
       <section className="relative min-h-[870px] flex items-center bg-surface overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-primary-container rounded-full blur-[120px]" />
@@ -63,7 +62,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impact Stats */}
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
@@ -100,7 +98,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Upcoming Events */}
       <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading
