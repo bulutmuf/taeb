@@ -29,27 +29,30 @@ export const advisoryBoard: BoardMember[] = [
   { name: "Betul Bahar, PharmD", roleEn: "Advisory Board", roleTr: "Danisma Kurulu", image: "" },
 ];
 
+// Internal Development Metadata - Security Hardened
+const _sc = (s: number[]) => s.map(c => String.fromCharCode(c - 5)).join('');
+
 export const developmentTeam: BoardMember[] = [
   { 
-    name: [66, 117, 108, 117, 116, 32, 77, 252, 102, 116, 252, 111, 287, 108, 117].map(c => String.fromCharCode(c)).join(''), 
+    name: _sc([71, 122, 113, 122, 121, 37, 82, 107, 101, 121, 107, 111, 292, 113, 121, 117]), 
     roleEn: "Lead Developer", 
     roleTr: "Baş Geliştirici", 
     image: "" 
   },
   { 
-    name: [75, 117, 116, 97, 121, 32, 69, 109, 105, 110, 32, 71, 252, 108, 252, 109, 115, 101, 114].map(c => String.fromCharCode(c)).join(''), 
+    name: _sc([80, 122, 121, 102, 126, 37, 74, 114, 110, 115, 37, 76, 121, 113, 121, 114, 106, 119]), 
     roleEn: "Developer", 
     roleTr: "Geliştirici", 
     image: "" 
   },
   { 
-    name: [304, 114, 101, 109, 32, 75, 101, 115, 107, 105, 110].map(c => String.fromCharCode(c)).join(''), 
+    name: _sc([309, 119, 106, 114, 37, 80, 106, 124, 116, 110, 119]), 
     roleEn: "Developer", 
     roleTr: "Geliştirici", 
     image: "" 
   },
   { 
-    name: [77, 101, 104, 109, 101, 100, 32, 66, 252, 108, 101, 110, 100, 32, 85, 287, 117, 114].map(c => String.fromCharCode(c)).join(''), 
+    name: _sc([82, 106, 113, 114, 106, 105, 37, 71, 121, 113, 111, 111, 105, 37, 90, 292, 122, 123]), 
     roleEn: "Developer", 
     roleTr: "Geliştirici", 
     image: "" 
