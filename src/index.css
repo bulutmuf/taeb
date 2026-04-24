@@ -97,3 +97,23 @@ body {
 .editorial-gradient {
   background: linear-gradient(135deg, #005ab7 0%, #0072e5 100%);
 }
+
+/* Custom Scrollbar to match background */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 10px;
+  border: 2px solid var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-outline);
+}
+
