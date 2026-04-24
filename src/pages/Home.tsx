@@ -30,7 +30,7 @@ export default function Home() {
             />
             <div className="flex flex-wrap gap-4">
               <Link
-                to="/contact"
+                to="/membership"
                 className="editorial-gradient text-on-primary px-8 py-4 rounded-lg font-bold text-base hover:opacity-90 transition-opacity shadow-lg"
               >
                 {t("home.joinUs")}

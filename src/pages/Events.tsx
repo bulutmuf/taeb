@@ -115,6 +115,34 @@ export default function Events() {
         </div>
       </section>
 
+      {/* Sponsors Section */}
+      <section className="py-24 bg-surface-container-lowest border-t border-surface-container-high/30">
+        <div className="max-w-7xl mx-auto px-6">
+          <SectionHeading
+            title={t("events.sponsorsTitle") || "Sponsorlarımız"}
+            description={t("events.sponsorsDescription") || "Etkinliklerimizde bize destek olan ve vizyonumuzu paylaşan kıymetli destekçilerimiz."}
+            className="mb-16 text-center mx-auto items-center"
+            alignment="center"
+          />
+
+          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+            {/* Mock Sponsor Logos using SVG or Images */}
+            {[1, 2, 3, 4].map((i) => (
+              <div key={i} className="w-32 h-16 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <img 
+                  src={`/assets/sponsor-${i}.webp`} 
+                  alt={`Sponsor ${i}`} 
+                  className="max-w-full max-h-full object-contain"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="128" height="64" fill="none"><rect width="100%25" height="100%25" fill="none"/><text x="50%25" y="50%25" font-family="sans-serif" font-weight="bold" font-size="16" fill="%2364748b" text-anchor="middle" dominant-baseline="middle">LOGO ${i}</text></svg>`;
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Newsletter CTA */}
       <NewsletterCTA
         titleKey="events.newsletterTitle"

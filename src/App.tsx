@@ -8,6 +8,7 @@ import Internship from "./pages/Internship";
 import Members from "./pages/Members";
 import Contact from "./pages/Contact";
 import Media from "./pages/Media";
+import Membership from "./pages/Membership";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="members" element={<Members />} />
           <Route path="contact" element={<Contact />} />
           <Route path="media" element={<Media />} />
+          <Route path="membership" element={<Membership />} />
         </Route>
       </Routes>
     </BrowserRouter>
