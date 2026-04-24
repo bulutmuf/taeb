@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { boardOfDirectors, advisoryBoard, representatives } from "../data/members";
+import { boardOfDirectors, advisoryBoard, developmentTeam, representatives } from "../data/members";
 import MemberCard from "../components/MemberCard";
 import SectionHeading from "../components/SectionHeading";
 
@@ -45,6 +45,23 @@ export default function Members() {
                 name={member.name}
                 image={member.image}
                 variant="advisory"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-surface-container-highest">
+        <div className="max-w-7xl mx-auto px-6">
+          <SectionHeading title={t("members.devTitle") || "IT & Development Team"} className="mb-12 text-center items-center" alignment="center" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {developmentTeam.map((member, i) => (
+              <MemberCard
+                key={i}
+                name={member.name}
+                role={lang === "tr" ? member.roleTr : member.roleEn}
+                image={member.image}
+                variant="board"
               />
             ))}
           </div>
