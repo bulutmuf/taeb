@@ -118,6 +118,7 @@
     "emailPlaceholder": "E-posta adresiniz",
     "subscribe": "ABONE OL",
     "registerNow": "KAYIT OL",
+    "invalidEmail": "Lütfen geçerli bir e-posta adresi giriniz.",
     "sponsorsTitle": "Sponsorlarımız",
     "sponsorsDescription": "Sağlık sektöründe fark yaratan bu değerli kuruluşlarla iş birliği yapmaktan gurur duyuyoruz."
   },
