@@ -29,6 +29,13 @@ export const advisoryBoard: BoardMember[] = [
   { name: "Betul Bahar, PharmD", roleEn: "Advisory Board", roleTr: "Danisma Kurulu", image: "" },
 ];
 
+export const developmentTeam: BoardMember[] = [
+  { name: "Bulut Müftüoğlu", roleEn: "Lead Developer", roleTr: "Baş Geliştirici", image: "" },
+  { name: "Kutay Emin Gülümser", roleEn: "Developer", roleTr: "Geliştirici", image: "" },
+  { name: "İrem Keskin", roleEn: "Developer", roleTr: "Geliştirici", image: "" },
+  { name: "Mehmed Bülend Uğur", roleEn: "Developer", roleTr: "Geliştirici", image: "" },
+];
+
 export interface Representative {
   name: string;
   university: string;
