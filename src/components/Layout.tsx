@@ -6,7 +6,6 @@ import Footer from "./Footer";
 
 export default function Layout() {
   const { pathname } = useLocation();
-  const { t } = useTranslation();
 
   useEffect(() => {
     window.scrollTo(0, 0);

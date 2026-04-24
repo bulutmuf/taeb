@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { upcomingInterns, pastInterns, testimonials } from "../data/interns";
+import { upcomingInterns, pastInterns } from "../data/interns";
 import SectionHeading from "../components/SectionHeading";
 import PageSEO from "../components/PageSEO";
 import MemberCard from "../components/MemberCard";
