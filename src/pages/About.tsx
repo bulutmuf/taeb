@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import SectionHeading from "../components/SectionHeading";
+import { secureContent } from "../utils/security";
 
 export default function About() {
   const { t } = useTranslation();
@@ -48,7 +49,9 @@ export default function About() {
             <div className="md:w-1/3 md:sticky md:top-32 h-fit">
               <h2 className="text-3xl font-bold tracking-tight text-on-surface mb-4">{t("about.historyTitle")}</h2>
               <div className="w-12 h-1 bg-primary mb-6" />
-              <p className="text-on-surface-variant text-sm leading-loose">{t("about.historyDescription")}</p>
+              <p className="text-on-surface-variant text-sm leading-loose">
+                {secureContent(t("about.historyDescription"))}
+              </p>
             </div>
             <div className="md:w-2/3 space-y-16">
               <div className="bg-surface-container-lowest p-12 shadow-sm rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow">

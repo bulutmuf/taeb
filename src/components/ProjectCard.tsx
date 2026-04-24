@@ -1,4 +1,5 @@
 import type { Project } from "../data/projects";
+import { secureContent } from "../utils/security";
 
 interface ProjectCardProps {
   project: Project;
@@ -30,7 +31,7 @@ export default function ProjectCard({ project, t }: ProjectCardProps) {
             <span className="material-symbols-outlined text-primary text-3xl">{project.icon}</span>
           </div>
           <p className="text-on-surface-variant text-sm leading-relaxed mb-6 max-w-2xl">
-            {t(project.descKey)}
+            {secureContent(t(project.descKey))}
           </p>
           <button className="flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all">
             {t(project.ctaKey)} <span className="material-symbols-outlined text-sm">arrow_forward</span>
@@ -56,7 +57,7 @@ export default function ProjectCard({ project, t }: ProjectCardProps) {
               {t(project.tagKey)}
             </span>
             <h3 className="text-2xl font-bold text-on-surface mb-4">{t(project.titleKey)}</h3>
-            <p className="text-on-surface-variant text-sm leading-relaxed mb-8">{t(project.descKey)}</p>
+            <p className="text-on-surface-variant text-sm leading-relaxed mb-8">{secureContent(t(project.descKey))}</p>
             <div className="mt-auto">
               <button className="w-full bg-surface-container-high text-primary py-3 rounded font-bold text-sm hover:bg-primary hover:text-white transition-colors duration-300">
                 {t(project.ctaKey)}
@@ -83,7 +84,7 @@ export default function ProjectCard({ project, t }: ProjectCardProps) {
           {t(project.tagKey)}
         </span>
         <h3 className="text-xl font-bold text-on-surface mb-3">{t(project.titleKey)}</h3>
-        <p className="text-on-surface-variant text-sm leading-relaxed mb-6">{t(project.descKey)}</p>
+        <p className="text-on-surface-variant text-sm leading-relaxed mb-6">{secureContent(t(project.descKey))}</p>
         <button className="text-primary font-bold text-sm group-hover:underline">{t(project.ctaKey)}</button>
       </div>
     </div>
