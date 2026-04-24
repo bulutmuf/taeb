@@ -8,7 +8,7 @@ export default function Contact() {
 
   return (
     <>
-      <section className="max-w-7xl mx-auto px-6 pt-0 pb-16">
+      <section className="max-w-7xl mx-auto px-6 pt-16 pb-16">
         <SectionHeading
           badge="TAEB"
           title={t("contact.headline")}

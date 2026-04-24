@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <>
-      <section className="relative bg-surface pt-0 pb-24 overflow-hidden">
+      <section className="relative bg-surface pt-16 pb-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <SectionHeading

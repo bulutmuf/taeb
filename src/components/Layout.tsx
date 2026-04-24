@@ -27,7 +27,7 @@ export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col font-sans bg-surface text-on-surface">
       <Navbar />
-      <main className="flex-grow pt-24 animate-fade-in-up" key={pathname}>
+      <main className="flex-grow pt-0 animate-fade-in-up" key={pathname}>
         <Outlet />
       </main>
       <Footer />

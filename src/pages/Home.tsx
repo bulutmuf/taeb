@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative min-h-[870px] flex items-center bg-surface overflow-hidden">
+      <section className="relative min-h-[700px] flex items-center bg-surface pt-16 md:pt-0 overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-primary-container rounded-full blur-[120px]" />
           <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-tertiary-container rounded-full blur-[100px]" />

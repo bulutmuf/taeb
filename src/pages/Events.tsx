@@ -10,7 +10,7 @@ export default function Events() {
 
   return (
     <>
-      <section className="relative h-[409px] flex items-center bg-surface overflow-hidden">
+      <section className="relative h-[409px] flex items-center bg-surface pt-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover opacity-10"
