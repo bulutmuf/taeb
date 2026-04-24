@@ -52,7 +52,7 @@ export default function About() {
               <h2 className="text-3xl font-bold tracking-tight text-on-surface mb-4">{t("about.historyTitle")}</h2>
               <div className="w-12 h-1 bg-primary mb-6" />
               <p className="text-on-surface-variant text-sm leading-loose">
-                {secureContent(t("about.historyDescription"))}
+                {t("about.historyDescription")}
               </p>
             </div>
             <div className="md:w-2/3 space-y-16">
