@@ -25,12 +25,16 @@ export default function Layout() {
   }, [pathname, t]);
 
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-surface text-on-surface">
-      <Navbar />
+    <div className="min-h-screen flex flex-col font-sans bg-surface text-on-surface select-none">
+      <div className="select-text">
+        <Navbar />
+      </div>
       <main className="flex-grow pt-0 animate-fade-in-up" key={pathname}>
         <Outlet />
       </main>
-      <Footer />
+      <div className="select-text">
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -127,7 +127,29 @@
     "description": "TAEB, Türkiye'den eczacılık öğrencilerine Amerika Birleşik Devletleri'nde tam burslu staj imkanı sunmaktadır.",
     "upcomingInterns": "Yaklaşan Stajyerler",
     "pastInterns": "Stajyerlerimiz",
-    "testimonials": "Stajyerlerimiz Ne Diyor?"
+    "testimonials": "Stajyerlerimiz Ne Diyor?",
+    "testimonial_1": {
+      "quote": "TAEB, keşke daha önce tanışsaydım dediğiniz türden bir topluluk. Mentörlükten gerçek rehberliğe kadar TAEB, iddialı hedeflerin daha az korkutucu ve çok daha mümkün hissettirmesini sağlıyor.",
+      "name": "Ecz. Ülkü İrem Keskin"
+    },
+    "testimonial_2": {
+      "quote": "Bu deneyim beni, bir eczane sahibi olarak yaklaşımımı etkilemeye devam eden güçlü eczacılık işletmeciliği temelleriyle donattı.",
+      "name": "Ecz. Çağla Mengüllüoğlu"
+    },
+    "testimonial_3": {
+      "quote": "TAEB'in rehberliği, mentörlüğü ve içtenlikle destekleyici topluluğu sayesinde, TAEB büyük hedeflerin ulaşılabilir hissettirmesini sağlıyor ve asla tek başınıza çabalıyormuşsunuz gibi hissetmiyorsunuz.",
+      "name": "Ecz. Arif Çinkaya"
+    },
+    "testimonial_4": {
+      "quote": "Bu staj süresince eczacılık işletme süreçlerine dair anlayışımı güçlendirdim.",
+      "name": "Ecz. Mertcan Okatan"
+    },
+    "stats": {
+      "title": "Rakamlarla Etkimiz",
+      "interns": "100+ Stajyer",
+      "countries": "10+ Şehir",
+      "founded": "2013'ten Beri"
+    }
   },
   "members": {
     "headline": "Ekibimiz",

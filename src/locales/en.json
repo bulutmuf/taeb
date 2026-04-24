@@ -127,7 +127,29 @@
     "description": "TAEB provides fully funded internship opportunities in the United States for pharmacy students from Turkey.",
     "upcomingInterns": "Upcoming Interns",
     "pastInterns": "Our Interns",
-    "testimonials": "What Our Interns Say"
+    "testimonials": "What Our Interns Say",
+    "testimonial_1": {
+      "quote": "TAEB is the kind of community you wish you had earlier. From mentorship to real guidance, TAEB makes ambitious goals feel less intimidating and a lot more possible.",
+      "name": "Ecz. Ulku Irem Keskin"
+    },
+    "testimonial_2": {
+      "quote": "The experience equipped me with strong pharmacy business foundations that continue to influence my approach as a pharmacy owner.",
+      "name": "Ecz. Cagla Mengulluoglu"
+    },
+    "testimonial_3": {
+      "quote": "Through the TAEB's guidance, mentorship, and a genuinely supportive community, TAEB makes big goals feel achievable and you never feel like you're figuring it out alone.",
+      "name": "Ecz. Arif Cinkaya"
+    },
+    "testimonial_4": {
+      "quote": "During this internship, I strengthened my understanding of pharmacy business processes.",
+      "name": "Ecz. Mertcan Okatan"
+    },
+    "stats": {
+      "title": "Impact in Numbers",
+      "interns": "100+ Interns",
+      "countries": "10+ Cities",
+      "founded": "Since 2013"
+    }
   },
   "members": {
     "headline": "Our Team",

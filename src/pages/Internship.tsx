@@ -22,11 +22,27 @@ export default function Internship() {
 
       <section className="py-20 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+            <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-white flex flex-col items-center text-center">
+              <span className="text-3xl font-black text-primary mb-2">100+</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">{t("internship.stats.interns")}</span>
+            </div>
+            <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-white flex flex-col items-center text-center">
+              <span className="text-3xl font-black text-primary mb-2">20+</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">{t("internship.stats.countries")}</span>
+            </div>
+            <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-white flex flex-col items-center text-center">
+              <span className="text-3xl font-black text-primary mb-2">2013</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">{t("internship.stats.founded")}</span>
+            </div>
+          </div>
+
           <SectionHeading title={t("internship.testimonials")} className="mb-12" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((item, i) => (
-              <TestimonialCard key={i} quote={item.quote} name={item.name} image={item.image} />
-            ))}
+            <TestimonialCard quoteKey="internship.testimonial_1.quote" name={t("internship.testimonial_1.name")} />
+            <TestimonialCard quoteKey="internship.testimonial_2.quote" name={t("internship.testimonial_2.name")} />
+            <TestimonialCard quoteKey="internship.testimonial_3.quote" name={t("internship.testimonial_3.name")} />
+            <TestimonialCard quoteKey="internship.testimonial_4.quote" name={t("internship.testimonial_4.name")} />
           </div>
         </div>
       </section>
