@@ -15,8 +15,7 @@ export default function Media() {
           {t("media.badge")}
         </span>
         <h1 className="font-editorial text-5xl md:text-7xl font-light text-on-surface leading-[1.1] mb-6">
-          {t("media.headlineTitle")} <br />
-          <span className="editorial-italic">{t("media.headlineAccent")}</span>
+          {t("media.headlineTitle")} <span className="editorial-italic">{t("media.headlineAccent")}</span>
         </h1>
         <p className="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
           {t("media.description")}
