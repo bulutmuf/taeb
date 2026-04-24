@@ -25,7 +25,7 @@ export default function MemberCard({ name, role, image, variant = "board" }: Mem
 
   // Board Variant
   return (
-    <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm text-center hover:-translate-y-1 transition-transform border border-outline-variant/10">
+    <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm text-center transition-colors border border-outline-variant/10 hover:bg-surface-container-low">
       <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden">
         {image ? (
           <img src={image} alt={name} className="w-full h-full object-cover" />
