@@ -4,6 +4,17 @@ import { useFormValidation } from "../hooks/useFormValidation";
 
 export default function Footer() {
   const { t } = useTranslation();
+  const { error, setError, validateEmail } = useFormValidation();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get("email") as string;
+    
+    if (!validateEmail(email)) {
+      e.preventDefault();
+      setError(t("events.invalidEmail"));
+    }
+  };
 
   return (
     <footer className="w-full border-t border-[#E7E8E9] bg-[#F8F9FA]">
@@ -68,15 +79,21 @@ export default function Footer() {
             action="https://formsubmit.co/support@taeb.us" 
             method="POST"
             className="relative"
+            onSubmit={handleSubmit}
+            noValidate
           >
+            {error && (
+              <div className="absolute -top-7 left-0 text-red-600 text-[10px] font-bold transition-all duration-300 animate-in fade-in slide-in-from-bottom-1">
+                {error}
+              </div>
+            )}
             <input type="hidden" name="_subject" value="Newsletter Subscription (Footer)!" />
             <input
               name="email"
-              className="w-full bg-white border-0 border-b-2 border-outline-variant focus:border-primary focus:outline-none px-0 py-3 text-sm"
+              className={`w-full bg-white border-0 border-b-2 transition-colors px-0 py-3 text-sm focus:outline-none ${error ? 'border-red-600' : 'border-outline-variant focus:border-primary'}`}
               placeholder={t("footer.emailPlaceholder")}
               type="email"
               required
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
             <button 
               type="submit"

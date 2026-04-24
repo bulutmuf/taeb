@@ -1,12 +1,25 @@
 import { useTranslation } from "react-i18next";
 import SectionHeading from "../components/SectionHeading";
 import PageSEO from "../components/PageSEO";
+import { useFormValidation } from "../hooks/useFormValidation";
 
 export default function Membership() {
   const { t } = useTranslation();
+  const { error, setError, validateEmail } = useFormValidation();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get("email") as string;
+    
+    if (!validateEmail(email)) {
+      e.preventDefault();
+      setError(t("events.invalidEmail"));
+    }
+  };
 
   return (
     <>
+      <PageSEO titleKey="seo.membershipTitle" descriptionKey="seo.membershipDesc" />
       <section className="max-w-7xl mx-auto px-6 pt-0 pb-16">
         <SectionHeading
           badge="TAEB"
@@ -24,6 +37,8 @@ export default function Membership() {
               className="space-y-6"
               action="https://formsubmit.co/support@taeb.us" 
               method="POST"
+              onSubmit={handleSubmit}
+              noValidate
             >
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_subject" value="New Membership Application from TAEB Website" />
@@ -55,14 +70,19 @@ export default function Membership() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
+                <div className="relative">
                   <label className="block text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-2">
                     {t("contact.email")} *
                   </label>
+                  {error && (
+                    <div className="absolute -top-2 right-0 text-red-600 text-[10px] font-bold animate-fade-in-up">
+                      {error}
+                    </div>
+                  )}
                   <input
                     type="email"
                     name="email"
-                    className="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:outline-none py-3 px-0 text-sm transition-colors"
+                    className={`w-full bg-transparent border-0 border-b-2 transition-colors py-3 px-0 text-sm focus:outline-none ${error ? 'border-red-600' : 'border-outline-variant focus:border-primary'}`}
                     required
                   />
                 </div>

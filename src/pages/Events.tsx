@@ -3,6 +3,7 @@ import { pastEvents, featuredEvent } from "../data/events";
 import EventCard from "../components/EventCard";
 import SectionHeading from "../components/SectionHeading";
 import NewsletterCTA from "../components/NewsletterCTA";
+import PageSEO from "../components/PageSEO";
 
 export default function Events() {
   const { t, i18n } = useTranslation();
@@ -10,6 +11,7 @@ export default function Events() {
 
   return (
     <>
+      <PageSEO titleKey="seo.eventsTitle" descriptionKey="seo.eventsDesc" />
       <section className="relative h-[409px] flex items-center bg-surface pt-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img

@@ -2,12 +2,14 @@ import { useTranslation } from "react-i18next";
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 import SectionHeading from "../components/SectionHeading";
+import PageSEO from "../components/PageSEO";
 
 export default function Projects() {
   const { t } = useTranslation();
 
   return (
     <>
+      <PageSEO titleKey="seo.projectsTitle" descriptionKey="seo.projectsDesc" />
       <section className="max-w-7xl mx-auto px-6 pt-16 mb-20">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
           <SectionHeading

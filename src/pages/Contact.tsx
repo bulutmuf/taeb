@@ -9,6 +9,7 @@ export default function Contact() {
 
   return (
     <>
+      <PageSEO titleKey="seo.contactTitle" descriptionKey="seo.contactDesc" />
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-16">
         <SectionHeading
           badge="TAEB"

@@ -17,6 +17,17 @@ export default function NewsletterCTA({
   className = "",
 }: NewsletterCTAProps) {
   const { t } = useTranslation();
+  const { error, setError, validateEmail } = useFormValidation();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get("email") as string;
+    
+    if (!validateEmail(email)) {
+      e.preventDefault();
+      setError(t("events.invalidEmail"));
+    }
+  };
 
   return (
     <section className={`py-20 bg-surface-container-high ${className}`}>
@@ -29,21 +40,28 @@ export default function NewsletterCTA({
             <form 
               action="https://formsubmit.co/support@taeb.us" 
               method="POST"
-              className="flex flex-col md:flex-row gap-4"
+              className="flex flex-col md:flex-row gap-4 relative"
+              onSubmit={handleSubmit}
+              noValidate
             >
-              {/* FormSubmit Configuration */}
               <input type="hidden" name="_subject" value="New Newsletter Subscription!" />
               <input type="hidden" name="_honey" style={{ display: 'none' }} />
               <input type="hidden" name="_template" value="box" />
               
-              <input
-                name="email"
-                className="flex-grow bg-transparent border-0 border-b-2 border-outline-variant focus:outline-none focus:border-primary transition-colors py-4 px-0 placeholder:text-outline-variant text-on-surface text-base"
-                placeholder={t(placeholderKey)}
-                type="email"
-                required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              />
+              <div className="flex-grow group relative">
+                {error && (
+                  <div className="absolute -top-7 left-0 text-red-600 text-xs font-bold transition-all duration-300 animate-in fade-in slide-in-from-bottom-1">
+                    {error}
+                  </div>
+                )}
+                <input
+                  name="email"
+                  className={`w-full bg-transparent border-0 border-b-2 transition-colors py-4 px-0 placeholder:text-outline-variant text-on-surface text-base focus:outline-none ${error ? 'border-red-600' : 'border-outline-variant focus:border-primary'}`}
+                  placeholder={t(placeholderKey)}
+                  type="email"
+                  required
+                />
+              </div>
               <button
                 type="submit"
                 className="editorial-gradient text-white font-bold py-4 px-10 rounded-sm whitespace-nowrap active:scale-95 transition-transform"

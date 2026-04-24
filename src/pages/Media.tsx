@@ -9,6 +9,7 @@ export default function Media() {
 
   return (
     <div className="pt-16 pb-16">
+      <PageSEO titleKey="seo.mediaTitle" descriptionKey="seo.mediaDesc" />
       <section className="max-w-7xl mx-auto px-6 mb-20 text-center">
         <span className="inline-block py-1.5 px-4 mb-6 rounded-full text-xs font-bold tracking-widest text-primary bg-primary/10 select-none">
           {t("media.badge")}
