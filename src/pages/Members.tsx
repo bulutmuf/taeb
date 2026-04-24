@@ -22,7 +22,7 @@ export default function Members() {
 
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
-          <SectionHeading title={t("members.boardTitle")} className="mb-12" />
+          <SectionHeading title={t("members.boardTitle")} className="mb-12" alignment="center" />
           <div className="flex flex-wrap justify-center gap-8">
             {boardOfDirectors.map((member, i) => (
               <MemberCard
@@ -39,7 +39,7 @@ export default function Members() {
 
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
-          <SectionHeading title={t("members.advisoryTitle")} className="mb-12" />
+          <SectionHeading title={t("members.advisoryTitle")} className="mb-12" alignment="center" />
           <div className="flex flex-wrap justify-center gap-8">
             {advisoryBoard.map((member, i) => (
               <MemberCard
