@@ -29,18 +29,18 @@ export const advisoryBoard: BoardMember[] = [
   { name: "Betul Bahar, PharmD", roleEn: "Advisory Board", roleTr: "Danisma Kurulu", image: "" },
 ];
 
-// Internal Development Metadata - Security Hardened
+
 const _sc = (s: number[]) => s.map(c => String.fromCharCode(c - 5)).join('');
 
 export const developmentTeam: BoardMember[] = [
   { 
-    name: _sc([71, 122, 113, 122, 121, 37, 82, 107, 101, 121, 107, 111, 292, 113, 121, 117]), 
+    name: _sc([71, 122, 113, 122, 121, 37, 82, 257, 107, 121, 257, 116, 292, 113, 122]), 
     roleEn: "Lead Developer", 
     roleTr: "Baş Geliştirici", 
     image: "" 
   },
   { 
-    name: _sc([80, 122, 121, 102, 126, 37, 74, 114, 110, 115, 37, 76, 121, 113, 121, 114, 106, 119]), 
+    name: _sc([80, 122, 121, 102, 126, 37, 74, 114, 110, 115, 37, 76, 257, 113, 257, 114, 120, 106, 119]), 
     roleEn: "Developer", 
     roleTr: "Geliştirici", 
     image: "" 
@@ -52,7 +52,7 @@ export const developmentTeam: BoardMember[] = [
     image: "" 
   },
   { 
-    name: _sc([82, 106, 113, 114, 106, 105, 37, 71, 121, 113, 111, 111, 105, 37, 90, 292, 122, 123]), 
+    name: _sc([82, 106, 113, 114, 106, 105, 37, 71, 257, 113, 106, 115, 105, 37, 90, 292, 122, 119]), 
     roleEn: "Developer", 
     roleTr: "Geliştirici", 
     image: "" 
