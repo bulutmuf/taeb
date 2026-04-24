@@ -6,7 +6,7 @@ export default function Membership() {
 
   return (
     <>
-      <section className="max-w-7xl mx-auto px-6 pt-24 pb-16">
+      <section className="max-w-7xl mx-auto px-6 pt-0 pb-16">
         <SectionHeading
           badge="TAEB"
           title={t("membership.headline") || "Üyelik Başvurusu"}

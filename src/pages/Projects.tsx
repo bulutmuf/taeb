@@ -8,7 +8,7 @@ export default function Projects() {
 
   return (
     <>
-      <section className="max-w-7xl mx-auto px-6 pt-24 mb-20">
+      <section className="max-w-7xl mx-auto px-6 pt-0 mb-20">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
           <SectionHeading
             badge={t("projects.badge")}
