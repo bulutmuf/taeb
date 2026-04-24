@@ -111,6 +111,7 @@ export default function Events() {
         </div>
       </section>
 
+      {/* Sponsors section temporarily hidden per user request
       <section className="py-24 bg-surface-container-lowest border-t border-surface-container-high/30">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading
@@ -136,6 +137,7 @@ export default function Events() {
           </div>
         </div>
       </section>
+      */}
 
       <NewsletterCTA
         titleKey="events.newsletterTitle"

@@ -26,7 +26,7 @@ export default function NewsletterCTA({
             <h2 className="text-4xl font-extrabold tracking-tighter mb-6">{t(titleKey)}</h2>
             <p className="text-lg text-on-surface-variant mb-10 leading-relaxed">{t(descKey)}</p>
             <form 
-              action="https://formsubmit.co/bulutmuftuoglu@gmail.com" 
+              action="https://formsubmit.co/support@taeb.us" 
               method="POST"
               className="flex flex-col md:flex-row gap-4"
             >
