@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useFormValidation } from "../hooks/useFormValidation";
 import { contactInfo } from "../data/contact";
+import logo from "../assets/taeb-logo.svg";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -29,7 +30,7 @@ export default function Footer() {
     <footer className="w-full border-t border-[#E7E8E9] bg-[#F8F9FA]">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="space-y-6">
-          <div className="text-xl font-bold text-slate-900">TAEB</div>
+          <img src={logo} alt="TAEB Logo" className="h-12 w-auto brightness-0" />
           <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
             {t("footer.description")}
           </p>
