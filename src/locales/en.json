@@ -120,7 +120,8 @@
     "registerNow": "REGISTER NOW",
     "invalidEmail": "Please enter a valid email address.",
     "sponsorsTitle": "Our Sponsors",
-    "sponsorsDescription": "We are proud to collaborate with these leading organizations in the healthcare sector."
+    "sponsorsDescription": "We are proud to collaborate with these leading organizations in the healthcare sector.",
+    "successMessage": "Your request has been sent successfully!"
   },
   "internship": {
     "headline": "Internship Program",
