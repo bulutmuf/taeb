@@ -24,7 +24,7 @@ export default function Navbar() {
     <nav className="w-full sticky top-0 z-50 bg-white/80 backdrop-blur-xl shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <NavLink to="/" className="flex items-center gap-2 group">
-          <img src={logo} alt="TAEB Logo" className="h-10 w-auto transition-transform group-hover:scale-105" />
+          <img src={logo} alt="TAEB Logo" className="h-14 w-auto transition-transform group-hover:scale-105" />
         </NavLink>
 
         <div className="hidden md:flex items-center gap-8">
@@ -36,7 +36,7 @@ export default function Navbar() {
               className={({ isActive }) =>
                 `font-['Manrope'] text-sm tracking-tight transition-colors ${
                   isActive
-                    ? "text-[#007FFF] font-bold border-b-2 border-[#007FFF] pb-1"
+                    ? "text-tertiary font-bold border-b-2 border-tertiary pb-1"
                     : "text-slate-600 font-medium hover:text-slate-900"
                 }`
               }
