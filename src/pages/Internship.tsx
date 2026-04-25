@@ -51,22 +51,24 @@ export default function Internship() {
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("internship.upcomingInterns")} className="mb-4" />
           <p className="text-on-surface-variant mb-12">{upcomingInterns.length} interns selected for 2026</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
             {upcomingInterns.map((intern, i) => (
-              <div key={i} className="group bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:-translate-y-1 transition-transform">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden transition-transform group-hover:scale-110">
+              <div key={i} className="group bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:-translate-y-1 transition-all flex flex-col h-full border border-outline-variant/10">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden transition-transform group-hover:scale-110 flex-shrink-0">
                   {intern.image ? (
                     <img src={intern.image} alt={intern.name} className="w-full h-full object-cover" />
                   ) : (
                     <span className="material-symbols-outlined text-2xl text-on-surface-variant">person</span>
                   )}
                 </div>
-                <h3 className="font-bold text-on-surface text-sm text-center mb-1">{intern.name}</h3>
-                {intern.university && (
-                  <p className="text-xs text-on-surface-variant text-center mb-2">{intern.university}</p>
-                )}
+                <div className="flex-grow flex flex-col justify-start">
+                  <h3 className="font-bold text-on-surface text-sm text-center mb-1 leading-tight">{intern.name}</h3>
+                  {intern.university && (
+                    <p className="text-[10px] md:text-xs text-on-surface-variant text-center mb-2 leading-tight">{intern.university}</p>
+                  )}
+                </div>
                 {intern.scholarship && (
-                  <p className="text-[10px] text-center font-medium text-primary bg-primary/5 rounded px-2 py-1">
+                  <p className="text-[9px] md:text-[10px] text-center font-bold text-primary bg-primary/5 rounded px-2 py-1 mt-auto uppercase tracking-wider">
                     {intern.scholarship}
                   </p>
                 )}
@@ -79,7 +81,7 @@ export default function Internship() {
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("internship.pastInterns")} className="mb-12" />
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-4 md:gap-6">
             {pastInterns.map((intern, i) => (
               <MemberCard
                 key={i}

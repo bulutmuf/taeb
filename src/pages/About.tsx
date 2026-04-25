@@ -27,16 +27,16 @@ export default function About() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaRJgWd0erUB2GBKflieqwbBymLTGCiWsLYk7Gzih5Qa8wHVneqHoRsRUQ6aT5jPdArQUyKfOJIThEZqsmY5PCobkkvBl1p31fuzMMBfr_U5LoTM61fhlYVMasWFcwHLPmLhvP1wcBip0-t4tRNyxFL7wIuCIw80rSvEO9fNvPOkLZjyrEYq7eSAcJESeXZ-hZRSt_ZaxLNxr_-TSEOJnzepFmkDG2KxIbDCipPeiQyL_8YQ_NWja60t5T2o6DBq-Fp5chhyQsvZY"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-surface-container-lowest p-8 shadow-lg max-w-[240px] z-10">
+            <div className="absolute bottom-4 left-4 md:-bottom-6 md:-left-6 bg-surface-container-lowest p-4 md:p-8 shadow-lg max-w-[180px] md:max-w-[240px] z-10 transition-all duration-300">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-tertiary" style={{ fontVariationSettings: "'FILL' 1" }}>
+                <span className="material-symbols-outlined text-tertiary text-xl md:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>
                   stars
                 </span>
-                <span className="text-tertiary font-bold tracking-tighter text-2xl">
+                <span className="text-tertiary font-bold tracking-tighter text-xl md:text-2xl">
                   {t("about.activeMembersCount")}
                 </span>
               </div>
-              <p className="text-xs font-semibold text-on-surface-variant uppercase tracking-widest">
+              <p className="text-[10px] md:text-xs font-semibold text-on-surface-variant uppercase tracking-widest leading-tight">
                 {t("about.activeMembersLabel")}
               </p>
             </div>
@@ -111,7 +111,7 @@ export default function About() {
                   </div>
                   <h3 className="text-2xl font-bold">{t("about.missionTitle")}</h3>
                 </div>
-                <p className="text-on-surface-variant leading-loose italic">"{t("about.missionText")}"</p>
+                <p className="text-on-surface-variant leading-loose italic">{t("about.missionText")}</p>
               </div>
               <div>
                 <div className="flex items-center gap-4 mb-6">
@@ -120,7 +120,7 @@ export default function About() {
                   </div>
                   <h3 className="text-2xl font-bold">{t("about.visionTitle")}</h3>
                 </div>
-                <p className="text-on-surface-variant leading-loose italic">"{t("about.visionText")}"</p>
+                <p className="text-on-surface-variant leading-loose italic">{t("about.visionText")}</p>
               </div>
             </div>
           </div>

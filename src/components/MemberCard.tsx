@@ -9,32 +9,36 @@ export default function MemberCard({ name, role, image, variant = "board" }: Mem
   if (variant === "intern" || variant === "advisory") {
     // Smaller circular cards for bottom
     return (
-      <div className="text-center group">
-        <div className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-4 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden transition-transform group-hover:scale-110">
+      <div className="flex flex-col h-full items-center text-center group">
+        <div className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-4 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden transition-transform group-hover:scale-110 flex-shrink-0">
           {image ? (
             <img src={image} alt={name} className="w-full h-full object-cover" />
           ) : (
             <span className="material-symbols-outlined text-2xl text-on-surface-variant">person</span>
           )}
         </div>
-        <h3 className="font-bold text-on-surface text-sm">{name}</h3>
-        {role && <p className="text-xs text-on-surface-variant mt-1">{role}</p>}
+        <div className="flex-grow flex flex-col justify-start">
+          <h3 className="font-bold text-on-surface text-sm leading-tight mb-1">{name}</h3>
+          {role && <p className="text-[10px] md:text-xs text-on-surface-variant leading-tight">{role}</p>}
+        </div>
       </div>
     );
   }
 
   // Board Variant
   return (
-    <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm text-center transition-colors border border-outline-variant/10 hover:bg-surface-container-low">
-      <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden">
+    <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm text-center transition-colors border border-outline-variant/10 hover:bg-surface-container-low flex flex-col h-full w-full">
+      <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden flex-shrink-0">
         {image ? (
           <img src={image} alt={name} className="w-full h-full object-cover" />
         ) : (
           <span className="material-symbols-outlined text-3xl text-on-surface-variant">person</span>
         )}
       </div>
-      <h3 className="font-bold text-on-surface text-sm mb-1">{name}</h3>
-      {role && <p className="text-xs text-on-surface-variant">{role}</p>}
+      <div className="flex flex-col flex-grow justify-start">
+        <h3 className="font-bold text-on-surface text-sm mb-1 leading-tight">{name}</h3>
+        {role && <p className="text-xs text-on-surface-variant leading-relaxed">{role}</p>}
+      </div>
     </div>
   );
 }

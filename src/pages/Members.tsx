@@ -23,7 +23,7 @@ export default function Members() {
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("members.boardTitle")} className="mb-12" alignment="center" />
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
             {boardOfDirectors.map((member, i) => (
               <MemberCard
                 key={i}
@@ -40,7 +40,7 @@ export default function Members() {
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("members.advisoryTitle")} className="mb-12" alignment="center" />
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 sm:gap-6 md:gap-8">
             {advisoryBoard.map((member, i) => (
               <MemberCard
                 key={i}
@@ -66,7 +66,7 @@ export default function Members() {
                 className="mb-12 text-center items-center" 
                 alignment="center" 
               />
-              <div className="flex flex-wrap justify-center gap-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
                 {developmentTeam.map((m, idx) => (
                   <MemberCard
                     key={`sys-${idx}`}
