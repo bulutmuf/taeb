@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 import SectionHeading from "../components/SectionHeading";
@@ -44,9 +45,12 @@ export default function Projects() {
               <h2 className="text-4xl font-extrabold text-white mb-4">{t("projects.ctaTitle")}</h2>
               <p className="text-white/90 text-lg max-w-md">{t("projects.ctaDescription")}</p>
             </div>
-            <button className="bg-white text-primary px-8 py-4 rounded-sm font-extrabold shadow-xl hover:scale-105 active:scale-95 transition-all">
+            <Link 
+              to="/contact"
+              className="bg-white text-primary px-8 py-4 rounded-sm font-extrabold shadow-xl hover:scale-105 active:scale-95 transition-all"
+            >
               {t("projects.ctaButton")}
-            </button>
+            </Link>
           </div>
         </div>
       </section>
