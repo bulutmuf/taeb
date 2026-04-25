@@ -65,6 +65,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Smooth Transition Divider */}
+        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-surface-container-low to-transparent pointer-events-none" />
       </section>
 
       <section className="py-24 bg-surface-container-low">
