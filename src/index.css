@@ -121,25 +121,28 @@ body {
 
 /* Loading Overlay */
 .progress-bar-container {
-  width: 200px;
-  height: 2px;
+  width: 250px;
+  height: 8px;
   background-color: #f0f0f0;
   border-radius: 99px;
   overflow: hidden;
+  position: relative;
 }
 
 .progress-bar-fill {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
   height: 100%;
   background-color: var(--color-primary);
-  transform-origin: left;
-  animation: progressPulse 1.5s infinite ease-in-out;
+  border-radius: 99px;
+  animation: progressMove 1s infinite ease-in-out;
 }
 
-@keyframes progressPulse {
-  0% { transform: scaleX(0); }
-  50% { transform: scaleX(0.5); }
-  100% { transform: scaleX(1); }
+@keyframes progressMove {
+  0% { left: -40%; }
+  100% { left: 100%; }
 }
 
 
