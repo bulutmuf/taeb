@@ -26,7 +26,7 @@ export default function Contact() {
               <h2 className="text-2xl font-bold text-on-surface mb-8">{t("contact.formTitle")}</h2>
               <form 
                 className="space-y-6" 
-                action="https://formsubmit.co/support@taeb.us" 
+                action="https://formsubmit.co/contact@taeb.us" 
                 method="POST"
               >
                 <input type="hidden" name="_captcha" value="false" />

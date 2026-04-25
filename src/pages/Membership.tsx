@@ -35,7 +35,7 @@ export default function Membership() {
             <h2 className="text-2xl font-bold text-on-surface mb-8">{t("membership.formTitle") || "Başvuru Formu"}</h2>
             <form 
               className="space-y-6"
-              action="https://formsubmit.co/support@taeb.us" 
+              action="https://formsubmit.co/contact@taeb.us" 
               method="POST"
               onSubmit={handleSubmit}
               noValidate

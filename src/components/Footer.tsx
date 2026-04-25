@@ -105,7 +105,7 @@ export default function Footer() {
             {t("footer.newsletter")}
           </div>
           <form 
-            action="https://formsubmit.co/support@taeb.us" 
+            action="https://formsubmit.co/contact@taeb.us" 
             method="POST"
             className="relative"
             onSubmit={handleSubmit}
