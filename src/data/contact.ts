@@ -14,7 +14,7 @@ export const contactInfo: ContactInfo = {
   email: "contact@taeb.us",
   address: "4383 Route 27 Princeton, NJ, USA",
   social: {
-    linkedin: "https://www.linkedin.com/company/turkish-american-pharmacists-association-taeb/",
+    linkedin: "https://www.linkedin.com/company/turkish-american-pharmacist-association/",
     instagram: "https://www.instagram.com/taeb.usa",
     twitter: "https://www.twitter.com/taeb_official"
   }
