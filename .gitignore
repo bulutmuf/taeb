@@ -27,3 +27,9 @@ events.html
 projects.html
 content.txt
 rules.txt
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
