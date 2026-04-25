@@ -138,7 +138,7 @@ export default function Footer() {
             )}
             <input
               name="email"
-              className={`w-full bg-white border-0 border-b-2 transition-colors px-0 py-3 text-sm focus:outline-none ${error ? 'border-red-600' : 'border-outline-variant focus:border-primary'}`}
+              className={`w-full bg-white border-0 border-b-2 transition-colors pl-2 pr-20 py-3 text-sm focus:outline-none ${error ? 'border-red-600' : 'border-outline-variant focus:border-primary'}`}
               placeholder={t("footer.emailPlaceholder")}
               type="email"
               disabled={isSubmitting || isSuccess}
@@ -147,7 +147,7 @@ export default function Footer() {
             <button 
               type="submit"
               disabled={isSubmitting || isSuccess}
-              className={`absolute right-0 top-1/2 -translate-y-1/2 font-bold text-xs uppercase ${isSubmitting ? 'text-slate-400' : 'text-primary'}`}
+              className={`absolute right-2 top-1/2 -translate-y-1/2 font-bold text-xs uppercase ${isSubmitting ? 'text-slate-400' : 'text-primary'}`}
             >
               {isSubmitting ? "..." : t("footer.subscribeButton")}
             </button>
