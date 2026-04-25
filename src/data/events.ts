@@ -2,6 +2,7 @@ export interface Event {
   id: string;
   date: string;
   month: string;
+  monthTr: string;
   year: string;
   day: string;
   titleKey: string;
@@ -20,6 +21,7 @@ export const upcomingEvents: Event[] = [
     id: "visa-info-day",
     date: "2026-05-03",
     month: "MAY",
+    monthTr: "MAY",
     year: "2026",
     day: "03",
     titleKey: "visaInfoDay",
@@ -35,6 +37,7 @@ export const upcomingEvents: Event[] = [
     id: "student-meeting",
     date: "2026-05-17",
     month: "MAY",
+    monthTr: "MAY",
     year: "2026",
     day: "17",
     titleKey: "studentMeeting",
@@ -50,6 +53,7 @@ export const upcomingEvents: Event[] = [
     id: "naplex-seminar",
     date: "2026-06-08",
     month: "JUN",
+    monthTr: "HAZ",
     year: "2026",
     day: "08",
     titleKey: "naplexSeminar",
@@ -68,6 +72,7 @@ export const pastEvents: Event[] = [
     id: "president-taeb",
     date: "2026-01",
     month: "JAN",
+    monthTr: "OCA",
     year: "2026",
     day: "",
     titleKey: "presidentTaeb",
@@ -84,6 +89,7 @@ export const pastEvents: Event[] = [
     id: "flying-pharmacists-event",
     date: "2026-03",
     month: "MAR",
+    monthTr: "MAR",
     year: "2026",
     day: "",
     titleKey: "flyingPharmacistsEvent",
@@ -100,6 +106,7 @@ export const pastEvents: Event[] = [
     id: "american-dream-event",
     date: "2026-05",
     month: "MAY",
+    monthTr: "MAY",
     year: "2026",
     day: "",
     titleKey: "americanDreamEvent",
@@ -116,6 +123,7 @@ export const pastEvents: Event[] = [
     id: "nyc-spirit-event",
     date: "2026-06",
     month: "JUN",
+    monthTr: "HAZ",
     year: "2026",
     day: "",
     titleKey: "nycSpiritEvent",

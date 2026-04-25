@@ -12,6 +12,7 @@ const Members = lazy(() => import("./pages/Members"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Media = lazy(() => import("./pages/Media"));
 const Membership = lazy(() => import("./pages/Membership"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="media" element={<Media />} />
             <Route path="membership" element={<Membership />} />
+            <Route path="privacy" element={<PrivacyPolicy />} />
           </Route>
         </Routes>
       </Suspense>

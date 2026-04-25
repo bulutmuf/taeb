@@ -26,7 +26,9 @@ export default function EventCard({ event, variant = "upcoming", lang, t }: Even
         </div>
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-bold text-primary tracking-widest uppercase">{event.month} {event.year}</span>
+            <span className="text-xs font-bold text-primary tracking-widest uppercase">
+              {lang === "tr" ? event.monthTr : event.month} {event.year}
+            </span>
             <span className="text-xs font-medium text-on-surface-variant">{event.location}</span>
           </div>
           <h3 className="text-xl font-extrabold tracking-tight group-hover:text-primary transition-colors">
@@ -48,7 +50,7 @@ export default function EventCard({ event, variant = "upcoming", lang, t }: Even
       <div className="flex-shrink-0 text-center md:text-left min-w-[120px]">
         <div className="text-3xl font-black text-tertiary">{event.day}</div>
         <div className="text-xs font-bold text-on-surface-variant uppercase tracking-tighter">
-          {event.month} {event.year}
+          {lang === "tr" ? event.monthTr : event.month} {event.year}
         </div>
       </div>
       <div className="flex-grow">

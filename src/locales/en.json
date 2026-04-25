@@ -206,6 +206,35 @@
     "mediaTitle": "Media & Blog: TAEB",
     "mediaDesc": "Latest news, webinars, and pharmacy journals from the TAEB community.",
     "membershipTitle": "Membership Application: TAEB",
-    "membershipDesc": "Follow the steps to become a member of the Turkish American Pharmacists Association."
+    "membershipDesc": "Follow the steps to become a member of the Turkish American Pharmacists Association.",
+    "privacyTitle": "Privacy Policy: TAEB",
+    "privacyDesc": "Learn about how TAEB collects, uses, and protects your personal data in accordance with GDPR and KVKK."
+  },
+  "privacy": {
+    "headline": "Privacy Policy",
+    "lastUpdated": "Last Updated: June 2026",
+    "intro": "The Turkish American Pharmacists Association (TAEB) respects your privacy and is committed to protecting your personal data. This privacy policy complies with both the General Data Protection Regulation (GDPR) and the Personal Data Protection Law (KVKK).",
+    "sections": {
+      "dataCollection": {
+        "title": "1. Data Collection",
+        "content": "We collect information you provide directly to us, such as when you create an account, subscribe to our newsletter, apply for membership, or contact us at contact@taeb.us."
+      },
+      "dataUse": {
+        "title": "2. How We Use Your Data",
+        "content": "We use your data to provide networking services, organize events, process membership applications, and communicate updates relevant to TAEB activities."
+      },
+      "dataProtection": {
+        "title": "3. Data Protection and Security",
+        "content": "We implement rigorous technical and organizational measures to ensure the security of your personal data against unauthorized access, alteration, or disclosure."
+      },
+      "userRights": {
+        "title": "4. Your Rights (GDPR & KVKK)",
+        "content": "You have the right to access, correct, delete, or port your personal data. You may also withdraw your consent for processing at any time by contacting us."
+      },
+      "contact": {
+        "title": "5. Contact Us",
+        "content": "If you have any questions or requests regarding your personal data, please contact our Data Protection Officer at contact@taeb.us."
+      }
+    }
   }
 }

@@ -206,6 +206,35 @@
     "mediaTitle": "Medya & Blog: TAEB",
     "mediaDesc": "TAEB topluluğundan en son haberler, webinarlar ve eczacılık dergileri.",
     "membershipTitle": "Üyelik Başvurusu: TAEB",
-    "membershipDesc": "Türk Amerikan Eczacılar Birliği üyesi olmak için başvuru adımlarını takip edin."
+    "membershipDesc": "Türk Amerikan Eczacılar Birliği üyesi olmak için başvuru adımlarını takip edin.",
+    "privacyTitle": "Gizlilik Politikası: TAEB",
+    "privacyDesc": "TAEB'nin KVKK ve GDPR kapsamında kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu öğrenin."
+  },
+  "privacy": {
+    "headline": "Gizlilik Politikası",
+    "lastUpdated": "Son Güncelleme: Haziran 2026",
+    "intro": "Türk Amerikan Eczacılar Birliği (TAEB) olarak gizliliğinize saygı duyuyor ve kişisel verilerinizi korumayı taahhüt ediyoruz. Bu gizlilik politikası, hem 6698 Sayılı Kişisel Verilerin Korunması Kanunu (KVKK) hem de Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) gerekliliklerine uygun olarak hazırlanmıştır.",
+    "sections": {
+      "dataCollection": {
+        "title": "1. Veri Toplama",
+        "content": "Bize doğrudan sağladığınız bilgileri toplarız. Hesap oluşturduğunuzda, bültenimize abone olduğunuzda, üyelik başvurusunda bulunduğunuzda veya contact@taeb.us üzerinden bizimle iletişime geçtiğinizde paylaştığınız bilgiler bu kapsamdadır."
+      },
+      "dataUse": {
+        "title": "2. Verilerin Kullanımı",
+        "content": "Kişisel verilerinizi size networking hizmetleri sunmak, etkinlikler organize etmek, üyelik başvurularınızı değerlendirmek ve TAEB faaliyetleri hakkında güncel bilgileri iletmek amacıyla kullanırız."
+      },
+      "dataProtection": {
+        "title": "3. Veri Koruması ve Güvenlik",
+        "content": "Kişisel verilerinizin yetkisiz erişime, değiştirilmeye veya ifşa edilmeye karşı güvenliğini sağlamak için kapsamlı teknik ve idari tedbirler uyguluyoruz."
+      },
+      "userRights": {
+        "title": "4. Haklarınız (KVKK & GDPR)",
+        "content": "Kişisel verilerinize erişme, onları düzeltme, silme veya aktarma haklarına sahipsiniz. İzni geri çekmek dahil her türlü talebiniz için bizimle dilediğiniz zaman iletişime geçebilirsiniz."
+      },
+      "contact": {
+        "title": "5. Bize Ulaşın",
+        "content": "Kişisel verilerinizle ilgili her türlü soru ve talebiniz için lütfen Veri Koruma Yetkilimizle contact@taeb.us adresi üzerinden iletişime geçin."
+      }
+    }
   }
 }

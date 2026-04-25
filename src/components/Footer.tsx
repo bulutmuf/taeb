@@ -154,7 +154,7 @@ export default function Footer() {
           </form>
           <div className="pt-4 flex flex-col gap-2">
             <div className="text-slate-900 font-semibold text-sm">{t("footer.copyright")}</div>
-            <NavLink to="/contact" className="text-slate-500 text-xs hover:text-primary transition-colors">
+            <NavLink to="/privacy" className="text-slate-500 text-xs hover:text-primary transition-colors">
               {t("footer.privacyPolicy")}
             </NavLink>
           </div>
