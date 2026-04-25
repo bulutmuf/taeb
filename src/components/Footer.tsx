@@ -5,16 +5,24 @@ import { contactInfo } from "../data/contact";
 
 export default function Footer() {
   const { t } = useTranslation();
-  const { error, setError, validateEmail } = useFormValidation();
+  const { error, setError, isSubmitting, isSuccess, validateEmail, submitData } = useFormValidation();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email") as string;
     
     if (!validateEmail(email)) {
-      e.preventDefault();
       setError(t("events.invalidEmail"));
+      return;
     }
+
+    const data = {
+      email,
+      _subject: "Newsletter Subscription (Footer)!"
+    };
+
+    await submitData(data);
   };
 
   return (
@@ -105,8 +113,6 @@ export default function Footer() {
             {t("footer.newsletter")}
           </div>
           <form 
-            action="https://formsubmit.co/contact@taeb.us" 
-            method="POST"
             className="relative"
             onSubmit={handleSubmit}
             noValidate
@@ -116,19 +122,25 @@ export default function Footer() {
                 {error}
               </div>
             )}
-            <input type="hidden" name="_subject" value="Newsletter Subscription (Footer)!" />
+            {isSuccess && (
+              <div className="absolute -top-7 left-0 text-green-600 text-[10px] font-bold transition-all duration-300 animate-in fade-in slide-in-from-bottom-1">
+                {t("events.successMessage") || "Success! Thank you for subscribing."}
+              </div>
+            )}
             <input
               name="email"
               className={`w-full bg-white border-0 border-b-2 transition-colors px-0 py-3 text-sm focus:outline-none ${error ? 'border-red-600' : 'border-outline-variant focus:border-primary'}`}
               placeholder={t("footer.emailPlaceholder")}
               type="email"
+              disabled={isSubmitting || isSuccess}
               required
             />
             <button 
               type="submit"
-              className="absolute right-0 top-1/2 -translate-y-1/2 text-primary font-bold text-xs uppercase"
+              disabled={isSubmitting || isSuccess}
+              className={`absolute right-0 top-1/2 -translate-y-1/2 font-bold text-xs uppercase ${isSubmitting ? 'text-slate-400' : 'text-primary'}`}
             >
-              {t("footer.subscribeButton")}
+              {isSubmitting ? "..." : t("footer.subscribeButton")}
             </button>
           </form>
           <div className="pt-4 flex flex-col gap-2">
