@@ -47,7 +47,7 @@ export default function Home() {
           </div>
 
           <div className="md:col-span-5 relative">
-            <div className="aspect-square rounded-xl overflow-hidden shadow-2xl relative">
+            <div className="aspect-[3/2] rounded-xl overflow-hidden shadow-2xl relative">
               <img
                 alt="Professional meeting environment"
                 className="w-full h-full object-cover"
