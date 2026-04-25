@@ -54,10 +54,13 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent" />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl border-l-4 border-tertiary">
-              <div className="text-3xl font-black text-on-surface">{t("home.awardYear")}</div>
-              <div className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
-                {t("home.awardLabel")}
+            <div className="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-2xl border border-white/20 overflow-hidden">
+              <div className="absolute top-0 left-0 w-1.5 h-full bg-primary" />
+              <div className="relative">
+                <div className="text-4xl font-black text-on-surface tracking-tighter mb-1">{t("home.awardYear")}</div>
+                <div className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] leading-none">
+                  {t("home.awardLabel")}
+                </div>
               </div>
             </div>
           </div>
