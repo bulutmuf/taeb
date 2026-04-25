@@ -23,46 +23,26 @@ export default function PrivacyPolicy() {
                 {t("privacy.intro")}
               </p>
 
-              <div>
-                <h2 className="text-2xl font-bold text-on-surface mb-4">
-                  {t("privacy.sections.dataCollection.title")}
-                </h2>
-                <p>{t("privacy.sections.dataCollection.content")}</p>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-bold text-on-surface mb-4">
-                  {t("privacy.sections.dataUse.title")}
-                </h2>
-                <p>{t("privacy.sections.dataUse.content")}</p>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-bold text-on-surface mb-4">
-                  {t("privacy.sections.dataProtection.title")}
-                </h2>
-                <p>{t("privacy.sections.dataProtection.content")}</p>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-bold text-on-surface mb-4">
-                  {t("privacy.sections.userRights.title")}
-                </h2>
-                <p>{t("privacy.sections.userRights.content")}</p>
-              </div>
-
-              <div className="bg-surface-container p-8 rounded-xl border-l-4 border-primary">
-                <h2 className="text-2xl font-bold text-on-surface mb-4">
-                  {t("privacy.sections.contact.title")}
-                </h2>
-                <p className="mb-0">
-                  {t("privacy.sections.contact.content").split('contact@taeb.us')[0]}
-                  <a href="mailto:contact@taeb.us" className="text-primary font-bold hover:underline">
-                    contact@taeb.us
-                  </a>
-                  {t("privacy.sections.contact.content").split('contact@taeb.us')[1]}
-                </p>
-              </div>
+              {(t("privacy.sections", { returnObjects: true }) as Array<{ title: string; content: string }>).map((section, index) => (
+                <div key={index} className="pt-4 border-t border-outline-variant/10 first:border-0 first:pt-0">
+                  <h2 className="text-2xl font-bold text-on-surface mb-4">
+                    {section.title}
+                  </h2>
+                  <p>
+                    {section.content.includes("contact@taeb.us") ? (
+                      <>
+                        {section.content.split("contact@taeb.us")[0]}
+                        <a href="mailto:contact@taeb.us" className="text-primary font-bold hover:underline">
+                          contact@taeb.us
+                        </a>
+                        {section.content.split("contact@taeb.us")[1]}
+                      </>
+                    ) : (
+                      section.content
+                    )}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

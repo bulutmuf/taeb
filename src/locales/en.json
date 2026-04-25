@@ -212,29 +212,41 @@
   },
   "privacy": {
     "headline": "Privacy Policy",
-    "lastUpdated": "Last Updated: June 2026",
-    "intro": "The Turkish American Pharmacists Association (TAEB) respects your privacy and is committed to protecting your personal data. This privacy policy complies with both the General Data Protection Regulation (GDPR) and the Personal Data Protection Law (KVKK).",
-    "sections": {
-      "dataCollection": {
-        "title": "1. Data Collection",
-        "content": "We collect information you provide directly to us, such as when you create an account, subscribe to our newsletter, apply for membership, or contact us at contact@taeb.us."
+    "lastUpdated": "Last Updated: 25.04.2026",
+    "intro": "The Turkish American Pharmacists Association (TAEB) is committed to protecting the privacy and security of your personal data. This comprehensive Privacy Policy outlines our practices regarding the collection, use, processing, and disclosure of your information in compliance with the General Data Protection Regulation (GDPR) and the Personal Data Protection Law (KVKK). By accessing our platform or using our services, you consent to the data practices described herein.",
+    "sections": [
+      {
+        "title": "1. Data Controller Identity",
+        "content": "Under the GDPR and KVKK, TAEB acts as the primary Data Controller. We decide how and why your personal information is processed. Queries regarding your data or our practices can be directed to our official contact channel at contact@taeb.us."
       },
-      "dataUse": {
-        "title": "2. How We Use Your Data",
-        "content": "We use your data to provide networking services, organize events, process membership applications, and communicate updates relevant to TAEB activities."
+      {
+        "title": "2. Categories of Personal Data Collected",
+        "content": "To deliver our services effectively, we collect several categories of personal data. This includes Identity Information (such as name and signature), Contact Information (such as email address and phone number), Professional Information (such as academic degree, university, and employment history), and Technical Data (such as IP addresses and browser configurations when you interact with our website)."
       },
-      "dataProtection": {
-        "title": "3. Data Protection and Security",
-        "content": "We implement rigorous technical and organizational measures to ensure the security of your personal data against unauthorized access, alteration, or disclosure."
+      {
+        "title": "3. Lawful Basis and Purpose of Processing",
+        "content": "We process your personal data strictly upon established legal grounds. These include your explicit consent, the necessity to perform a contract (such as membership agreements or event registrations), compliance with legal obligations, and our legitimate interests in improving our services and communicating relevant administrative updates."
       },
-      "userRights": {
-        "title": "4. Your Rights (GDPR & KVKK)",
-        "content": "You have the right to access, correct, delete, or port your personal data. You may also withdraw your consent for processing at any time by contacting us."
+      {
+        "title": "4. Data Retention and Security",
+        "content": "TAEB implements robust technical and organizational security protocols to protect your data against unauthorized access, alteration, loss, or destruction. Your data is retained only for as long as necessary to fulfill the purposes outlined in this policy or to comply with statutory retention periods under applicable laws."
       },
-      "contact": {
-        "title": "5. Contact Us",
-        "content": "If you have any questions or requests regarding your personal data, please contact our Data Protection Officer at contact@taeb.us."
+      {
+        "title": "5. Third-Party Disclosures and International Transfers",
+        "content": "As an international organization operating between Turkey and the United States, your data may be transferred across borders. We ensure that any such transfers comply with GDPR and KVKK requirements, utilizing standard contractual clauses and ensuring adequate levels of data protection by our third-party service providers (such as hosting platforms and mailing list managers)."
+      },
+      {
+        "title": "6. Your Statutory Rights",
+        "content": "Subject to applicable data protection laws, you possess the right to request access to your personal data, seek rectification of inaccurate data, request erasure ('right to be forgotten'), object to or restrict processing, and request data portability. Furthermore, you retain the right to withdraw your consent at any point without affecting the lawfulness of processing based on consent before its withdrawal."
+      },
+      {
+        "title": "7. Updates to This Privacy Policy",
+        "content": "We reserve the right to amend this Privacy Policy periodically to reflect changes in our operational practices or statutory requirements. We encourage users to frequently check this page. Continued use of our services after any amendments constitutes your acknowledgment of the updated policy."
+      },
+      {
+        "title": "8. Contact Us",
+        "content": "Should you have any inquiries, complaints, or requests regarding this Privacy Policy or your personal data, please contact our Data Protection Officer directly via email at contact@taeb.us. We are dedicated to addressing your concerns promptly."
       }
-    }
+    ]
   }
 }

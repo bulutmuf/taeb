@@ -212,29 +212,41 @@
   },
   "privacy": {
     "headline": "Gizlilik Politikası",
-    "lastUpdated": "Son Güncelleme: Haziran 2026",
-    "intro": "Türk Amerikan Eczacılar Birliği (TAEB) olarak gizliliğinize saygı duyuyor ve kişisel verilerinizi korumayı taahhüt ediyoruz. Bu gizlilik politikası, hem 6698 Sayılı Kişisel Verilerin Korunması Kanunu (KVKK) hem de Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) gerekliliklerine uygun olarak hazırlanmıştır.",
-    "sections": {
-      "dataCollection": {
-        "title": "1. Veri Toplama",
-        "content": "Bize doğrudan sağladığınız bilgileri toplarız. Hesap oluşturduğunuzda, bültenimize abone olduğunuzda, üyelik başvurusunda bulunduğunuzda veya contact@taeb.us üzerinden bizimle iletişime geçtiğinizde paylaştığınız bilgiler bu kapsamdadır."
+    "lastUpdated": "Son Güncelleme: 25.04.2026",
+    "intro": "Türk Amerikan Eczacılar Birliği (TAEB) olarak kişisel verilerinizin gizliliğini ve güvenliğini korumaya büyük önem veriyoruz. Bu kapsamlı Gizlilik Politikası, bilgilerinizin toplanması, kullanılması, işlenmesi ve aktarılması süreçlerini Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) ve 6698 Sayılı Kişisel Verilerin Korunması Kanunu (KVKK) uyarınca nasıl yürüttüğümüzü açıklamaktadır. Platformumuzu ziyaret ederek veya hizmetlerimizi kullanarak, burada belirtilen veri uygulamalarını kabul etmiş olursunuz.",
+    "sections": [
+      {
+        "title": "1. Veri Sorumlusunun Kimliği",
+        "content": "GDPR ve KVKK kapsamında, TAEB ana Veri Sorumlusu sıfatıyla hareket etmektedir. Kişisel bilgilerinizin ne şekilde ve hangi amaçlarla işleneceğine Birlik olarak karar veriyoruz. Verilerinize veya uygulamalarımıza ilişkin sorularınızı doğrudan contact@taeb.us resmi iletişim adresimiz üzerinden bize iletebilirsiniz."
       },
-      "dataUse": {
-        "title": "2. Verilerin Kullanımı",
-        "content": "Kişisel verilerinizi size networking hizmetleri sunmak, etkinlikler organize etmek, üyelik başvurularınızı değerlendirmek ve TAEB faaliyetleri hakkında güncel bilgileri iletmek amacıyla kullanırız."
+      {
+        "title": "2. Toplanan Kişisel Veri Kategorileri",
+        "content": "Hizmetlerimizi etkili bir şekilde sunabilmek adına çeşitli kategorilerde kişisel veriler toplamaktayız. Bunlar arasında Kimlik Bilgileri (isim ve imza gibi), İletişim Bilgileri (e-posta adresi ve telefon numarası gibi), Mesleki Bilgiler (akademik derece, üniversite ve iş geçmişi gibi) ve web sitemizle etkileşime geçtiğinizde elde edilen Teknik Veriler (IP adresleri ve tarayıcı yapılandırmaları) yer almaktadır."
       },
-      "dataProtection": {
-        "title": "3. Veri Koruması ve Güvenlik",
-        "content": "Kişisel verilerinizin yetkisiz erişime, değiştirilmeye veya ifşa edilmeye karşı güvenliğini sağlamak için kapsamlı teknik ve idari tedbirler uyguluyoruz."
+      {
+        "title": "3. İşlemenin Hukuki Sebepleri ve Amaçları",
+        "content": "Kişisel verileriniz yalnızca belirli hukuki dayanaklar çerçevesinde işlenmektedir. Bu dayanaklar; açık rızanız, bir sözleşmenin ifası (üyelik sözleşmeleri veya etkinlik kayıtları gibi), yasal yükümlülüklerimizin yerine getirilmesi ve hizmetlerimizi geliştirmek veya ilgili idari güncellemeleri iletmek konusundaki meşru menfaatlerimizdir."
       },
-      "userRights": {
-        "title": "4. Haklarınız (KVKK & GDPR)",
-        "content": "Kişisel verilerinize erişme, onları düzeltme, silme veya aktarma haklarına sahipsiniz. İzni geri çekmek dahil her türlü talebiniz için bizimle dilediğiniz zaman iletişime geçebilirsiniz."
+      {
+        "title": "4. Verilerin Saklanması ve Güvenliği",
+        "content": "TAEB, verilerinizi yetkisiz erişime, değiştirilmeye, kaybolmaya veya imha edilmeye karşı korumak için sıkı teknik ve idari güvenlik protokolleri uygular. Verileriniz yalnızca bu politikada belirtilen amaçları yerine getirmek veya yürürlükteki yasalar kapsamındaki yasal saklama sürelerine uymak için gerekli olan süre boyunca saklanır."
       },
-      "contact": {
-        "title": "5. Bize Ulaşın",
-        "content": "Kişisel verilerinizle ilgili her türlü soru ve talebiniz için lütfen Veri Koruma Yetkilimizle contact@taeb.us adresi üzerinden iletişime geçin."
+      {
+        "title": "5. Üçüncü Taraflarla Paylaşım ve Uluslararası Aktarımlar",
+        "content": "Türkiye ile Amerika Birleşik Devletleri arasında faaliyet gösteren uluslararası bir sivil toplum kuruluşu olarak, verileriniz sınır ötesine aktarılabilir. Sunucu sağlayıcıları ve posta listesi yöneticileri gibi üçüncü taraf hizmet sağlayıcılarımızın; standart sözleşme maddeleri kullanılarak GDPR ve KVKK gerekliliklerine uymasını ve yeterli veri koruma düzeylerini sağlamasını güvence altına alıyoruz."
+      },
+      {
+        "title": "6. Yasal Haklarınız",
+        "content": "Yürürlükteki veri koruma yasalarına tabi olarak; kişisel verilerinize erişim talep etme, yanlış verilerin düzeltilmesini isteme, silinme talep etme ('unutulma hakkı'), işlemeye itiraz etme veya sınırlama ve veri taşınabilirliği talep etme hakkına sahipsiniz. Ayrıca, geri çekilmeden önceki rızaya dayalı işlemenin hukuka uygunluğu etkilenmemek kaydıyla, rızanızı dilediğiniz zaman geri çekme hakkınızı saklı tutarsınız."
+      },
+      {
+        "title": "7. Bu Politikadaki Değişiklikler",
+        "content": "Operasyonel uygulamalarımızdaki veya yasal gerekliliklerdeki değişiklikleri yansıtmak amacıyla bu Gizlilik Politikasını periyodik olarak güncelleme hakkımızı saklı tutuyoruz. Kullanıcılarımızı bu sayfayı sık sık kontrol etmeye teşvik ediyoruz. Herhangi bir değişiklikten sonra hizmetlerimizi kullanmaya devam etmeniz, güncellenen politikayı kabul ettiğiniz anlamına gelir."
+      },
+      {
+        "title": "8. Bize Ulaşın",
+        "content": "Bu Gizlilik Politikası veya kişisel verileriniz ile ilgili herhangi bir sorunuz, şikayetiniz veya talebiniz olması durumunda, lütfen doğrudan contact@taeb.us adresi üzerinden Veri Koruma Yetkilimiz (DPO) ile iletişime geçin. Taleplerinize ciddiyetle ve en kısa sürede yanıt vermeyi taahhüt ediyoruz."
       }
-    }
+    ]
   }
 }
