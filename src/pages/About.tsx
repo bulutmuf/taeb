@@ -55,12 +55,14 @@ export default function About() {
               </p>
             </div>
             <div className="md:w-2/3 space-y-16">
-              <div className="bg-surface-container-lowest p-12 shadow-sm rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow">
+              <div className="bg-surface-container-lowest p-12 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all group relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-primary/20 group-hover:bg-primary transition-colors" />
                 <h3 className="text-5xl font-black text-surface-container-highest mb-6">{t("about.year2014")}</h3>
                 <h4 className="text-xl font-bold mb-4">{t("about.year2014Title")}</h4>
                 <p className="text-on-surface-variant leading-relaxed">{t("about.year2014Desc")}</p>
               </div>
-              <div className="bg-surface-container-lowest p-12 shadow-sm rounded-lg border-l-4 border-tertiary hover:shadow-md transition-shadow">
+              <div className="bg-surface-container-lowest p-12 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all group relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-primary/20 group-hover:bg-primary transition-colors" />
                 <h3 className="text-5xl font-black text-surface-container-highest mb-6">{t("about.year2026")}</h3>
                 <h4 className="text-xl font-bold mb-4">{t("about.year2026Title")}</h4>
                 <p className="text-on-surface-variant leading-relaxed">{t("about.year2026Desc")}</p>
