@@ -7,7 +7,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite_6-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg?style=for-the-badge)](#license)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0)
 
 </div>
 
@@ -143,6 +143,6 @@ Maintainers submitting pull requests must adhere to the following stringent stan
 
 ## 8. License & Copyright
 
-All materials, source code logic, operational paradigms, and brand markers within this repository are the proprietary ownership of the **Turkish American Pharmacists Association**. 
+All materials, source code logic, operational paradigms, and brand markers within this repository are the property of the **Turkish American Pharmacists Association**. 
 
-This repository **does not** function under a public Open Source License (such as MIT or GPL). Dissemination, reproduction, or deployment of this logical structure outside authorized organizational parameters is strictly prohibited. 
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**. See the `LICENSE` file for more details. 
