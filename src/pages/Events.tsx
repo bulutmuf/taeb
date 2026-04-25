@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { pastEvents, featuredEvent } from "../data/events";
+import { pastEvents } from "../data/events";
 import EventCard from "../components/EventCard";
 import SectionHeading from "../components/SectionHeading";
 import NewsletterCTA from "../components/NewsletterCTA";

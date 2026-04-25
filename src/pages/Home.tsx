@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { upcomingEvents } from "../data/events";
+import homeRight from "../assets/home-right.jpg";
 import StatCard from "../components/StatCard";
 import EventCard from "../components/EventCard";
 import SectionHeading from "../components/SectionHeading";
@@ -46,11 +47,11 @@ export default function Home() {
           </div>
 
           <div className="md:col-span-5 relative">
-            <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative">
+            <div className="aspect-square rounded-xl overflow-hidden shadow-2xl relative">
               <img
                 alt="Professional meeting environment"
                 className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQuYb56MkbWPY77Kvs5Snf9VHLYFnLPN3zWxemf9mSopaYnRBCd2jQsLbMgEJrHOiJNR7AAi7r7V69A7SBr4zQDt9j_9a4qUDsUXuT4NENq9m4ib6MNWEey8TIwrBEQmFiv5fhfbqNAHCfG2ji6i1GBV1laNFddzLevB5lYhN-yKDXL4rl4gugYA5g9mJvyuYPSwPN8WkZP3O-ymbz6zc4LWgXklrUzM3cPsyf1DsMFjLtAg26CzAevAgK2VYp4VZ5b-G7M7u52P8"
+                src={homeRight}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent" />
             </div>
