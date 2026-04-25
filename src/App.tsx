@@ -14,6 +14,8 @@ const Media = lazy(() => import("./pages/Media"));
 const Membership = lazy(() => import("./pages/Membership"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 
+const NotFound = lazy(() => import("./pages/NotFound"));
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -30,6 +32,7 @@ export default function App() {
             <Route path="media" element={<Media />} />
             <Route path="membership" element={<Membership />} />
             <Route path="privacy" element={<PrivacyPolicy />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Suspense>

@@ -208,7 +208,8 @@
     "membershipTitle": "Üyelik Başvurusu: TAEB",
     "membershipDesc": "Türk Amerikan Eczacılar Birliği üyesi olmak için başvuru adımlarını takip edin.",
     "privacyTitle": "Gizlilik Politikası: TAEB",
-    "privacyDesc": "TAEB'nin KVKK ve GDPR kapsamında kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu öğrenin."
+    "privacyDesc": "TAEB'nin KVKK ve GDPR kapsamında kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu öğrenin.",
+    "notFoundTitle": "Sayfa Bulunamadı: TAEB"
   },
   "privacy": {
     "headline": "Gizlilik Politikası",
@@ -248,5 +249,11 @@
         "content": "Bu Gizlilik Politikası veya kişisel verileriniz ile ilgili herhangi bir sorunuz, şikayetiniz veya talebiniz olması durumunda, lütfen doğrudan contact@taeb.us adresi üzerinden Veri Koruma Yetkilimiz (DPO) ile iletişime geçin. Taleplerinize ciddiyetle ve en kısa sürede yanıt vermeyi taahhüt ediyoruz."
       }
     ]
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Sayfa Bulunamadı",
+    "description": "Aradığınız sayfa kaldırılmış, adı değiştirilmiş veya geçici olarak kullanılamıyor olabilir.",
+    "backHome": "Ana Sayfaya Dön"
   }
 }
