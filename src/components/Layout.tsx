@@ -15,7 +15,7 @@ export default function Layout() {
       <div className="select-text">
         <Navbar />
       </div>
-      <main className="flex-grow pt-0 animate-fade-in-up" key={pathname}>
+      <main className="flex-grow pt-0 fade-in" key={pathname}>
         <Outlet />
       </main>
       <div className="select-text">
