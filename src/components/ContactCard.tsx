@@ -17,7 +17,7 @@ export default function ContactCard({ icon, title, content, theme = "primary" }:
   const textColor = getThemeText();
 
   return (
-    <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-outline-variant/10 group">
+    <div className="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 transition-all hover:border-primary/50 group">
       <div className="flex flex-col items-start gap-4">
         <span className={`material-symbols-outlined text-4xl ${textColor} transition-transform group-hover:scale-110 duration-300`}>
           {icon}
