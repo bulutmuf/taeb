@@ -17,7 +17,7 @@ export default function NewsletterCTA({
   className = "",
 }: NewsletterCTAProps) {
   const { t } = useTranslation();
-  const { error, setError, isSubmitting, isSuccess, validateEmail, submitData } = useFormValidation();
+  const { error, setError, isSubmitting, isSuccess, validateEmail, checkDuplicateEmail, markEmailAsSubscribed, submitData } = useFormValidation();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -25,7 +25,12 @@ export default function NewsletterCTA({
     const email = formData.get("email") as string;
     
     if (!validateEmail(email)) {
-      setError(t("events.invalidEmail"));
+      setError(t("events.invalidEmail") || "Lütfen geçerli bir e-posta adresi girin.");
+      return;
+    }
+
+    if (checkDuplicateEmail(email)) {
+      setError(t("events.alreadySubscribed") || "Bu e-posta adresi zaten bültenimize kayıtlı.");
       return;
     }
 
@@ -34,7 +39,10 @@ export default function NewsletterCTA({
       _subject: "New Newsletter Subscription!"
     };
 
-    await submitData(data);
+    const success = await submitData(data);
+    if (success) {
+      markEmailAsSubscribed(email);
+    }
   };
 
   return (

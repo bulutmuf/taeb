@@ -20,6 +20,14 @@ export function useFormValidation(duration: number = 10000) {
     return regex.test(email);
   };
 
+  const checkDuplicateEmail = (email: string) => {
+    return localStorage.getItem(`subscribed_${email}`) !== null;
+  };
+
+  const markEmailAsSubscribed = (email: string) => {
+    localStorage.setItem(`subscribed_${email}`, 'true');
+  };
+
   const submitData = async (data: any, email: string = "contact@taeb.us") => {
     setIsSubmitting(true);
     setError(null);
@@ -48,5 +56,5 @@ export function useFormValidation(duration: number = 10000) {
     }
   };
 
-  return { error, setError, isSubmitting, isSuccess, validateEmail, submitData };
+  return { error, setError, isSubmitting, isSuccess, validateEmail, checkDuplicateEmail, markEmailAsSubscribed, submitData };
 }

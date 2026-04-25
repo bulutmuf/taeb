@@ -6,7 +6,7 @@ import logo from "../assets/taeb-logo.svg";
 
 export default function Footer() {
   const { t } = useTranslation();
-  const { error, setError, isSubmitting, isSuccess, validateEmail, submitData } = useFormValidation();
+  const { error, setError, isSubmitting, isSuccess, validateEmail, checkDuplicateEmail, markEmailAsSubscribed, submitData } = useFormValidation();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -14,7 +14,12 @@ export default function Footer() {
     const email = formData.get("email") as string;
     
     if (!validateEmail(email)) {
-      setError(t("events.invalidEmail"));
+      setError(t("events.invalidEmail") || "Lütfen geçerli bir e-posta adresi girin.");
+      return;
+    }
+
+    if (checkDuplicateEmail(email)) {
+      setError(t("events.alreadySubscribed") || "Bu e-posta adresi zaten bültenimize kayıtlı.");
       return;
     }
 
@@ -23,7 +28,10 @@ export default function Footer() {
       _subject: "Newsletter Subscription (Footer)!"
     };
 
-    await submitData(data);
+    const success = await submitData(data);
+    if (success) {
+      markEmailAsSubscribed(email);
+    }
   };
 
   return (
