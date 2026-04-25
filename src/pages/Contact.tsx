@@ -20,8 +20,11 @@ export default function Contact() {
       return;
     }
 
-    const data = Object.fromEntries(formData.entries());
-    await submitData({ ...data, _subject: "New Contact Request from TAEB Website" });
+    const data: any = { _subject: "New Contact Request from TAEB Website" };
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+    await submitData(data);
   };
 
   return (
