@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import PageSkeleton, { HomeSkeleton } from "./components/PageSkeleton";
+import LoadingOverlay from "./components/LoadingOverlay";
 
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
@@ -21,7 +21,7 @@ export default function App() {
           <Route 
             index 
             element={
-              <Suspense fallback={<HomeSkeleton />}>
+              <Suspense fallback={<LoadingOverlay />}>
                 <Home />
               </Suspense>
             } 
@@ -29,7 +29,7 @@ export default function App() {
           <Route 
             path="*" 
             element={
-              <Suspense fallback={<PageSkeleton />}>
+              <Suspense fallback={<LoadingOverlay />}>
                 <Routes>
                   <Route path="about" element={<About />} />
                   <Route path="projects" element={<Projects />} />
