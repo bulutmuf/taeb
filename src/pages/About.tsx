@@ -127,16 +127,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-24 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-xs font-bold tracking-[0.2em] text-outline mb-12 uppercase">{t("about.partners")}</p>
-          <div className="flex flex-wrap justify-center gap-16 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-            {["ACADEMIA", "TECH-CORP", "GLOBAL-BRIDGE", "INNOVA-US", "TURK-USA"].map((name) => (
-              <div key={name} className="font-black text-2xl text-on-surface-variant cursor-pointer">{name}</div>
-            ))}
-          </div>
-        </div>
-      </section>
+
     </>
   );
 }
