@@ -30,7 +30,7 @@ export default function Footer() {
     <footer className="w-full border-t border-[#E7E8E9] bg-[#F8F9FA]">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="space-y-6">
-          <img src={logo} alt="TAEB Logo" className="h-12 w-auto brightness-0" />
+          <img src={logo} alt="TAEB Logo" className="h-12 w-auto" />
           <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
             {t("footer.description")}
           </p>
