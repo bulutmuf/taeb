@@ -40,14 +40,15 @@ export default function Members() {
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("members.advisoryTitle")} className="mb-12" alignment="center" />
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 sm:gap-6 md:gap-8">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
             {advisoryBoard.map((member, i) => (
-              <MemberCard
-                key={i}
-                name={member.name}
-                image={member.image}
-                variant="advisory"
-              />
+              <div key={i} className="w-20 sm:w-24 md:w-28">
+                <MemberCard
+                  name={member.name}
+                  image={member.image}
+                  variant="advisory"
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -66,15 +67,16 @@ export default function Members() {
                 className="mb-12 text-center items-center" 
                 alignment="center" 
               />
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+              <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
                 {developmentTeam.map((m, idx) => (
-                  <MemberCard
-                    key={`sys-${idx}`}
-                    name={m.name}
-                    role={lang === "tr" ? m.roleTr : m.roleEn}
-                    image={m.image}
-                    variant="board"
-                  />
+                  <div key={`sys-${idx}`} className="w-40 sm:w-44 md:w-48 lg:w-52">
+                    <MemberCard
+                      name={m.name}
+                      role={lang === "tr" ? m.roleTr : m.roleEn}
+                      image={m.image}
+                      variant="board"
+                    />
+                  </div>
                 ))}
               </div>
             </div>
