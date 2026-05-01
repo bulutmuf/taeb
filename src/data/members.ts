@@ -6,27 +6,27 @@ export interface BoardMember {
 }
 
 export const boardOfDirectors: BoardMember[] = [
-  { name: "Mehmed Bulend Ugur", roleEn: "Founder-President", roleTr: "Kurucu Baskan", image: "" },
-  { name: "Zehra Kilic", roleEn: "Vice President", roleTr: "Baskan Yardimcisi", image: "" },
-  { name: "Ulku Irem Keskin", roleEn: "Secretary General", roleTr: "Genel Sekreter", image: "" },
+  { name: "Mehmed Bülend Uğur", roleEn: "Founder-President", roleTr: "Kurucu Başkan", image: "" },
+  { name: "Zehra Kılıç", roleEn: "Vice President", roleTr: "Başkan Yardımcısı", image: "" },
+  { name: "Ülkü İrem Keskin", roleEn: "Secretary General", roleTr: "Genel Sekreter", image: "" },
   { name: "Mert Okatan", roleEn: "Treasurer", roleTr: "Sayman", image: "" },
-  { name: "Bulent Gumusel", roleEn: "Director of Education", roleTr: "Egitim Koordinatoru", image: "" },
-  { name: "Isa Bodur", roleEn: "Director of Licensing", roleTr: "ABD Denklik Koordinatoru", image: "" },
-  { name: "Mustafa Abacioglu", roleEn: "Director of Member Relations", roleTr: "Uye Iliskileri Direktoru", image: "" },
-  { name: "Bora Uyar", roleEn: "Director of Student Affairs - Turkey", roleTr: "Ogrenci Iliskileri Direktoru - Turkiye", image: "" },
-  { name: "Mina Ugur", roleEn: "Director of Student Affairs - USA", roleTr: "Ogrenci Iliskileri Direktoru - ABD", image: "" },
-  { name: "Saban Kar", roleEn: "Director of Business - Corporate", roleTr: "Kurumsal Isler Direktoru", image: "" },
-  { name: "Soltan Cangoz", roleEn: "Director of Business - Pharmacy", roleTr: "Eczane Isleri Direktoru", image: "" },
-  { name: "Seyma Ozturk", roleEn: "Director of TAEB Turkey", roleTr: "TAEB Turkiye Direktoru", image: "" },
-  { name: "Omer Sarisin", roleEn: "Director of TAEB Turkey", roleTr: "TAEB Turkiye Direktoru", image: "" },
+  { name: "Bülent Gümüşel", roleEn: "Director of Education", roleTr: "Eğitim Koordinatörü", image: "" },
+  { name: "İsa Bodur", roleEn: "Director of Licensing", roleTr: "ABD Denklik Koordinatörü", image: "" },
+  { name: "Mustafa Abacıoğlu", roleEn: "Director of Member Relations", roleTr: "Üye İlişkileri Direktörü", image: "" },
+  { name: "Bora Uyar", roleEn: "Director of Student Affairs - Turkey", roleTr: "Öğrenci İlişkileri Direktörü - Türkiye", image: "" },
+  { name: "Mina Uğur", roleEn: "Director of Student Affairs - USA", roleTr: "Öğrenci İlişkileri Direktörü - ABD", image: "" },
+  { name: "Şaban Kar", roleEn: "Director of Business - Corporate", roleTr: "Kurumsal İşler Direktörü", image: "" },
+  { name: "Soltan Cangöz", roleEn: "Director of Business - Pharmacy", roleTr: "Eczane İşleri Direktörü", image: "" },
+  { name: "Şeyma Öztürk", roleEn: "Director of TAEB Turkey", roleTr: "TAEB Türkiye Direktörü", image: "" },
+  { name: "Ömer Sarışın", roleEn: "Director of TAEB Turkey", roleTr: "TAEB Türkiye Direktörü", image: "" },
 ];
 
 export const advisoryBoard: BoardMember[] = [
-  { name: "Senay Alptekin, RPh", roleEn: "Advisory Board", roleTr: "Danisma Kurulu", image: "" },
-  { name: "Esin Kadiev, RPh", roleEn: "Advisory Board", roleTr: "Danisma Kurulu", image: "" },
-  { name: "Serkan Ozturk, RPh", roleEn: "Advisory Board", roleTr: "Danisma Kurulu", image: "" },
-  { name: "Zeynep Sahin, Pharm", roleEn: "Advisory Board", roleTr: "Danisma Kurulu", image: "" },
-  { name: "Betul Bahar, PharmD", roleEn: "Advisory Board", roleTr: "Danisma Kurulu", image: "" },
+  { name: "Şenay Alptekin, RPh", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", image: "" },
+  { name: "Esin Kadiev, RPh", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", image: "" },
+  { name: "Serkan Öztürk, RPh", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", image: "" },
+  { name: "Zeynep Şahin, Pharm", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", image: "" },
+  { name: "Betül Bahar, PharmD", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", image: "" },
 ];
 
 
