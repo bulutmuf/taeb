@@ -3,10 +3,18 @@ import { boardOfDirectors, advisoryBoard, developmentTeam, representatives } fro
 import MemberCard from "../components/MemberCard";
 import SectionHeading from "../components/SectionHeading";
 import PageSEO from "../components/PageSEO";
+import { usePreloadMemberImages } from "../utils/usePreloadMemberImages";
 
 export default function Members() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
+
+  // Hold the global loading overlay until all visible member images resolve.
+  usePreloadMemberImages([
+    ...boardOfDirectors.map((m) => m.name),
+    ...advisoryBoard.map((m) => m.name),
+    ...developmentTeam.map((m) => m.name),
+  ]);
 
   return (
     <>
