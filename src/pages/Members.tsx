@@ -24,7 +24,7 @@ function preloadOne(candidates: string[]): Promise<void> {
 
 const memberNames = [
   ...boardOfDirectors.map((m) => m.name),
-  ...advisoryBoard.map((m) => m.name),
+  // ...advisoryBoard.map((m) => m.name), // Temporarily hidden
   ...studentBoard.map((m) => m.name),
   ...developmentTeam.map((m) => m.name),
 ];
@@ -72,6 +72,7 @@ export default function Members() {
         </div>
       </section>
 
+      {/* Temporarily hiding Advisory Board 
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading title={t("members.advisoryTitle")} className="mb-12" alignment="center" />
@@ -89,6 +90,7 @@ export default function Members() {
           </div>
         </div>
       </section>
+      */}
 
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
