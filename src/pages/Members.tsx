@@ -3,18 +3,43 @@ import { boardOfDirectors, advisoryBoard, developmentTeam, representatives } fro
 import MemberCard from "../components/MemberCard";
 import SectionHeading from "../components/SectionHeading";
 import PageSEO from "../components/PageSEO";
-import { usePreloadMemberImages } from "../utils/usePreloadMemberImages";
+import { getMemberImageCandidates } from "../utils/memberImage";
+
+// ---------------------------------------------------------------------------
+// Module-level image preload — starts the moment this JS chunk is evaluated.
+// The component throws `preloadPromise` to keep the Suspense boundary (and
+// its overlay) active until BOTH the bundle AND the images are ready.
+// This eliminates the double-overlay caused by two separate loading phases.
+// ---------------------------------------------------------------------------
+function preloadOne(candidates: string[]): Promise<void> {
+  return new Promise((resolve) => {
+    if (!candidates.length) { resolve(); return; }
+    const [src, ...rest] = candidates;
+    const img = new window.Image();
+    img.onload  = () => resolve();
+    img.onerror = () => preloadOne(rest).then(resolve);
+    img.src = src;
+  });
+}
+
+const memberNames = [
+  ...boardOfDirectors.map((m) => m.name),
+  ...advisoryBoard.map((m) => m.name),
+  ...developmentTeam.map((m) => m.name),
+];
+
+let imagesReady = false;
+const preloadPromise = Promise.all(
+  memberNames.map((name) => preloadOne(getMemberImageCandidates(name)))
+).then(() => { imagesReady = true; });
+// ---------------------------------------------------------------------------
 
 export default function Members() {
+  // Suspend until images are loaded — Suspense overlay stays on screen.
+  if (!imagesReady) throw preloadPromise;
+
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
-
-  // Hold the global loading overlay until all visible member images resolve.
-  usePreloadMemberImages([
-    ...boardOfDirectors.map((m) => m.name),
-    ...advisoryBoard.map((m) => m.name),
-    ...developmentTeam.map((m) => m.name),
-  ]);
 
   return (
     <>
