@@ -16,7 +16,7 @@ export const boardOfDirectors: BoardMember[] = [
   { name: "İsa Bodur", roleEn: "Director of Licensing", roleTr: "ABD Denklik Koordinatörü", linkedin: "" },
   { name: "Mustafa Abacıoğlu", roleEn: "Director of Member Relations", roleTr: "Üye İlişkileri Direktörü", linkedin: "" },
   { name: "Bora Uyar", roleEn: "Director of Student Affairs - Turkey", roleTr: "Öğrenci İlişkileri Direktörü - Türkiye", linkedin: "" },
-  { name: "Mina Uğur", roleEn: "Director of Student Affairs - USA", roleTr: "Öğrenci İlişkileri Direktörü - ABD", linkedin: "" },
+  { name: "Sude Mina Uğur", roleEn: "Director of Student Affairs - USA", roleTr: "Öğrenci İlişkileri Direktörü - ABD", linkedin: "" },
   { name: "Şaban Kar", roleEn: "Director of Business - Corporate", roleTr: "Kurumsal İşler Direktörü", linkedin: "" },
   { name: "Soltan Cangöz", roleEn: "Director of Business - Pharmacy", roleTr: "Eczane İşleri Direktörü", linkedin: "" },
   { name: "Şeyma Öztürk", roleEn: "Director of TAEB Turkey", roleTr: "TAEB Türkiye Direktörü", linkedin: "" },
