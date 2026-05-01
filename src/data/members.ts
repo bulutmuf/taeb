@@ -2,31 +2,33 @@ export interface BoardMember {
   name: string;
   roleEn: string;
   roleTr: string;
-  image: string;
+  image?: string;
+  /** LinkedIn handle — the part after linkedin.com/in/ (e.g. "mehmed-bulend-ugur") */
+  linkedin?: string;
 }
 
 export const boardOfDirectors: BoardMember[] = [
-  { name: "Mehmed Bülend Uğur", roleEn: "Founder-President", roleTr: "Kurucu Başkan", image: "" },
-  { name: "Zehra Kılıç", roleEn: "Vice President", roleTr: "Başkan Yardımcısı", image: "" },
-  { name: "Ülkü İrem Keskin", roleEn: "Secretary General", roleTr: "Genel Sekreter", image: "" },
-  { name: "Mert Okatan", roleEn: "Treasurer", roleTr: "Sayman", image: "" },
-  { name: "Bülent Gümüşel", roleEn: "Director of Education", roleTr: "Eğitim Koordinatörü", image: "" },
-  { name: "İsa Bodur", roleEn: "Director of Licensing", roleTr: "ABD Denklik Koordinatörü", image: "" },
-  { name: "Mustafa Abacıoğlu", roleEn: "Director of Member Relations", roleTr: "Üye İlişkileri Direktörü", image: "" },
-  { name: "Bora Uyar", roleEn: "Director of Student Affairs - Turkey", roleTr: "Öğrenci İlişkileri Direktörü - Türkiye", image: "" },
-  { name: "Mina Uğur", roleEn: "Director of Student Affairs - USA", roleTr: "Öğrenci İlişkileri Direktörü - ABD", image: "" },
-  { name: "Şaban Kar", roleEn: "Director of Business - Corporate", roleTr: "Kurumsal İşler Direktörü", image: "" },
-  { name: "Soltan Cangöz", roleEn: "Director of Business - Pharmacy", roleTr: "Eczane İşleri Direktörü", image: "" },
-  { name: "Şeyma Öztürk", roleEn: "Director of TAEB Turkey", roleTr: "TAEB Türkiye Direktörü", image: "" },
-  { name: "Ömer Sarışın", roleEn: "Director of TAEB Turkey", roleTr: "TAEB Türkiye Direktörü", image: "" },
+  { name: "Mehmed Bülend Uğur", roleEn: "Founder-President", roleTr: "Kurucu Başkan", linkedin: "" },
+  { name: "Zehra Kılıç", roleEn: "Vice President", roleTr: "Başkan Yardımcısı", linkedin: "" },
+  { name: "Ülkü İrem Keskin", roleEn: "Secretary General", roleTr: "Genel Sekreter", linkedin: "" },
+  { name: "Mert Okatan", roleEn: "Treasurer", roleTr: "Sayman", linkedin: "" },
+  { name: "Bülent Gümüşel", roleEn: "Director of Education", roleTr: "Eğitim Koordinatörü", linkedin: "" },
+  { name: "İsa Bodur", roleEn: "Director of Licensing", roleTr: "ABD Denklik Koordinatörü", linkedin: "" },
+  { name: "Mustafa Abacıoğlu", roleEn: "Director of Member Relations", roleTr: "Üye İlişkileri Direktörü", linkedin: "" },
+  { name: "Bora Uyar", roleEn: "Director of Student Affairs - Turkey", roleTr: "Öğrenci İlişkileri Direktörü - Türkiye", linkedin: "" },
+  { name: "Mina Uğur", roleEn: "Director of Student Affairs - USA", roleTr: "Öğrenci İlişkileri Direktörü - ABD", linkedin: "" },
+  { name: "Şaban Kar", roleEn: "Director of Business - Corporate", roleTr: "Kurumsal İşler Direktörü", linkedin: "" },
+  { name: "Soltan Cangöz", roleEn: "Director of Business - Pharmacy", roleTr: "Eczane İşleri Direktörü", linkedin: "" },
+  { name: "Şeyma Öztürk", roleEn: "Director of TAEB Turkey", roleTr: "TAEB Türkiye Direktörü", linkedin: "" },
+  { name: "Ömer Sarışın", roleEn: "Director of TAEB Turkey", roleTr: "TAEB Türkiye Direktörü", linkedin: "" },
 ];
 
 export const advisoryBoard: BoardMember[] = [
-  { name: "Şenay Alptekin, RPh", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", image: "" },
-  { name: "Esin Kadiev, RPh", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", image: "" },
-  { name: "Serkan Öztürk, RPh", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", image: "" },
-  { name: "Zeynep Şahin, Pharm", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", image: "" },
-  { name: "Betül Bahar, PharmD", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", image: "" },
+  { name: "Şenay Alptekin, RPh", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", linkedin: "" },
+  { name: "Esin Kadiev, RPh", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", linkedin: "" },
+  { name: "Serkan Öztürk, RPh", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", linkedin: "" },
+  { name: "Zeynep Şahin, Pharm", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", linkedin: "" },
+  { name: "Betül Bahar, PharmD", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", linkedin: "" },
 ];
 
 

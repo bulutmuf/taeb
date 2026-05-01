@@ -30,6 +30,7 @@ export default function Members() {
                 name={member.name}
                 role={lang === "tr" ? member.roleTr : member.roleEn}
                 image={member.image}
+                linkedin={member.linkedin}
                 variant="board"
               />
             ))}
@@ -46,6 +47,7 @@ export default function Members() {
                 <MemberCard
                   name={member.name}
                   image={member.image}
+                  linkedin={member.linkedin}
                   variant="advisory"
                 />
               </div>
@@ -74,6 +76,7 @@ export default function Members() {
                       name={m.name}
                       role={lang === "tr" ? m.roleTr : m.roleEn}
                       image={m.image}
+                      linkedin={m.linkedin}
                       variant="board"
                     />
                   </div>
