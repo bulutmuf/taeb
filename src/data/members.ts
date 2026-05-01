@@ -33,7 +33,7 @@ export const advisoryBoard: BoardMember[] = [
 
 export const studentBoard: BoardMember[] = [
   { name: "Ceylin Fulya Tansu", roleEn: "President", roleTr: "Başkan", linkedin: "" },
-  { name: "Kutay Emin Gülümser", roleEn: "VP, Magazine & Blog", roleTr: "Bşk. Yrd., Dergi & Blog", linkedin: "" },
+  { name: "Kutay Emin Gülümser", roleEn: "Vice President", roleTr: "Başkan Yardımcısı", linkedin: "" },
   { name: "Efecan Işık", roleEn: "Student Rep. President", roleTr: "Temsilci Başkanı", linkedin: "" },
   { name: "Sıla Torun", roleEn: "Student Rep. President", roleTr: "Temsilci Başkanı", linkedin: "" },
   { name: "Emre Koçaroğlu", roleEn: "Education & Projects", roleTr: "Eğitim ve Proje", linkedin: "" },

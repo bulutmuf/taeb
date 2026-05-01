@@ -82,7 +82,7 @@ export default function MemberCard({ name, role, image, linkedin, variant = "boa
   // Advisory / intern variant — small circular card
   if (variant === "intern" || variant === "advisory") {
     return wrapWithLink(
-      <div className="flex flex-col h-[160px] items-center text-center justify-start w-full">
+      <div className="flex flex-col h-[140px] items-center text-center justify-start w-full">
         <div className="transition-transform group-hover:scale-110 mb-3 shrink-0">
           {image ? (
             <div className="w-14 h-14 md:w-16 md:h-16 mx-auto rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden flex-shrink-0">
@@ -104,7 +104,7 @@ export default function MemberCard({ name, role, image, linkedin, variant = "boa
 
   // Board variant — larger card
   return wrapWithLink(
-    <div className="bg-surface-container-lowest p-5 rounded-xl shadow-sm text-center transition-colors border border-outline-variant/10 group-hover:bg-surface-container-low flex flex-col h-[240px] w-full items-center justify-start">
+    <div className="bg-surface-container-lowest p-5 rounded-xl shadow-sm text-center transition-colors border border-outline-variant/10 group-hover:bg-surface-container-low flex flex-col h-[216px] w-full items-center justify-start">
       <div className="mb-4 transition-transform group-hover:scale-105 duration-200 shrink-0">
         {image ? (
           <div className="w-20 h-20 mx-auto rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden flex-shrink-0">
