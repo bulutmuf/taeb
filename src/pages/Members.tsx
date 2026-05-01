@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { boardOfDirectors, advisoryBoard, developmentTeam, representatives } from "../data/members";
+import { boardOfDirectors, advisoryBoard, developmentTeam, representatives, studentBoard } from "../data/members";
 import MemberCard from "../components/MemberCard";
 import SectionHeading from "../components/SectionHeading";
 import PageSEO from "../components/PageSEO";
@@ -25,6 +25,7 @@ function preloadOne(candidates: string[]): Promise<void> {
 const memberNames = [
   ...boardOfDirectors.map((m) => m.name),
   ...advisoryBoard.map((m) => m.name),
+  ...studentBoard.map((m) => m.name),
   ...developmentTeam.map((m) => m.name),
 ];
 
@@ -82,6 +83,25 @@ export default function Members() {
                   image={member.image}
                   linkedin={member.linkedin}
                   variant="advisory"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-6">
+          <SectionHeading title={t("members.studentBoardTitle")} className="mb-12" alignment="center" />
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
+            {studentBoard.map((member, i) => (
+              <div key={`sb-${i}`} className="w-32 sm:w-40 md:w-48 lg:w-52">
+                <MemberCard
+                  name={member.name}
+                  role={lang === "tr" ? member.roleTr : member.roleEn}
+                  image={member.image}
+                  linkedin={member.linkedin}
+                  variant="board"
                 />
               </div>
             ))}

@@ -31,6 +31,24 @@ export const advisoryBoard: BoardMember[] = [
   { name: "Betül Bahar, PharmD", roleEn: "Advisory Board", roleTr: "Danışma Kurulu", linkedin: "" },
 ];
 
+export const studentBoard: BoardMember[] = [
+  { name: "Ceylin Fulya Tansu", roleEn: "President", roleTr: "Başkan", linkedin: "" },
+  { name: "Kutay Emin Gülümser", roleEn: "Vice President, Magazine & Blog", roleTr: "Başkan Yardımcısı, Dergi & Blog", linkedin: "" },
+  { name: "Efecan Işık", roleEn: "Student Representative President", roleTr: "Öğrenci Temsilci Başkanı", linkedin: "" },
+  { name: "Sıla Torun", roleEn: "Student Representative President", roleTr: "Öğrenci Temsilci Başkanı", linkedin: "" },
+  { name: "Emre Koçaroğlu", roleEn: "Director of Education and Projects", roleTr: "Eğitim ve Proje Direktörü", linkedin: "" },
+  { name: "Beyzanur Aslandoğan", roleEn: "Director of Education and Projects", roleTr: "Eğitim ve Proje Direktörü", linkedin: "" },
+  { name: "Gülşen Ebrar Çapar", roleEn: "Director of Social Events", roleTr: "Sosyal Etkinlik Direktörü", linkedin: "" },
+  { name: "Yağmur Erinkurt", roleEn: "Director of Social Events", roleTr: "Sosyal Etkinlik Direktörü", linkedin: "" },
+  { name: "Mustafa Emre Ergüler", roleEn: "Director of Social Events", roleTr: "Sosyal Etkinlik Direktörü", linkedin: "" },
+  { name: "Mısra Dilara Dönmez", roleEn: "Director of Social Events", roleTr: "Sosyal Etkinlik Direktörü", linkedin: "" },
+  { name: "İlberk İnan Perçin", roleEn: "Director of Sponsorships and Partnerships", roleTr: "Sponsorluk ve İş Birlikleri Direktörü", linkedin: "" },
+  { name: "Şeyma Rana Karakaş", roleEn: "Director of Sponsorships and Partnerships", roleTr: "Sponsorluk ve İş Birlikleri Direktörü", linkedin: "" },
+  { name: "Zeynep Bulut", roleEn: "Director of Magazine and Publications", roleTr: "Dergi ve Yayın Direktörü", linkedin: "" },
+  { name: "Nazlıcan Koç", roleEn: "Secretary General (Departments)", roleTr: "Genel Sekreterlik (Departmanlar)", linkedin: "" },
+  { name: "Güneş Böke", roleEn: "Communications Manager", roleTr: "İletişim Sorumlusu (Sosyal Medya + Temsilcilikler)", linkedin: "" },
+];
+
 
 const _sc = (s: number[]) => s.map(c => String.fromCharCode(c - 5)).join('');
 
