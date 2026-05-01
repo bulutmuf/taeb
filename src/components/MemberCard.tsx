@@ -68,7 +68,7 @@ export default function MemberCard({ name, role, image, linkedin, variant = "boa
           href={linkedinUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className={`group relative block cursor-pointer ${extraClass}`}
+          className={`group relative block h-full cursor-pointer ${extraClass}`}
           aria-label={`${name} — LinkedIn`}
         >
           {children}
@@ -76,14 +76,14 @@ export default function MemberCard({ name, role, image, linkedin, variant = "boa
         </a>
       );
     }
-    return <div className={`group relative ${extraClass}`}>{children}</div>;
+    return <div className={`group relative h-full ${extraClass}`}>{children}</div>;
   };
 
   // Advisory / intern variant — small circular card
   if (variant === "intern" || variant === "advisory") {
     return wrapWithLink(
-      <div className="flex flex-col h-full items-center text-center">
-        <div className="transition-transform group-hover:scale-110 mb-4">
+      <div className="flex flex-col h-[160px] items-center text-center justify-start w-full">
+        <div className="transition-transform group-hover:scale-110 mb-3 shrink-0">
           {image ? (
             <div className="w-14 h-14 md:w-16 md:h-16 mx-auto rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden flex-shrink-0">
               <img src={image} alt={name} className="w-full h-full object-cover" />
@@ -92,10 +92,10 @@ export default function MemberCard({ name, role, image, linkedin, variant = "boa
             <MemberImage name={name} size="sm" />
           )}
         </div>
-        <div className="flex-grow flex flex-col justify-start">
-          <h3 className="font-bold text-on-surface text-sm leading-tight mb-1">{name}</h3>
+        <div className="flex flex-col flex-grow justify-start w-full px-1">
+          <h3 className="font-bold text-on-surface text-sm leading-tight mb-1 line-clamp-2">{name}</h3>
           {role && (
-            <p className="text-[10px] md:text-xs text-on-surface-variant leading-tight">{role}</p>
+            <p className="text-[10px] md:text-xs text-on-surface-variant leading-tight line-clamp-2">{role}</p>
           )}
         </div>
       </div>
@@ -104,8 +104,8 @@ export default function MemberCard({ name, role, image, linkedin, variant = "boa
 
   // Board variant — larger card
   return wrapWithLink(
-    <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm text-center transition-colors border border-outline-variant/10 group-hover:bg-surface-container-low flex flex-col h-full w-full">
-      <div className="mb-4 transition-transform group-hover:scale-105 duration-200">
+    <div className="bg-surface-container-lowest p-5 rounded-xl shadow-sm text-center transition-colors border border-outline-variant/10 group-hover:bg-surface-container-low flex flex-col h-[240px] w-full items-center justify-start">
+      <div className="mb-4 transition-transform group-hover:scale-105 duration-200 shrink-0">
         {image ? (
           <div className="w-20 h-20 mx-auto rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden flex-shrink-0">
             <img src={image} alt={name} className="w-full h-full object-cover" />
@@ -114,10 +114,10 @@ export default function MemberCard({ name, role, image, linkedin, variant = "boa
           <MemberImage name={name} size="lg" />
         )}
       </div>
-      <div className="flex flex-col flex-grow justify-start">
-        <h3 className="font-bold text-on-surface text-sm mb-1 leading-tight">{name}</h3>
+      <div className="flex flex-col flex-grow justify-start w-full">
+        <h3 className="font-bold text-on-surface text-sm mb-1 leading-tight line-clamp-2">{name}</h3>
         {role && (
-          <p className="text-xs text-on-surface-variant leading-relaxed">{role}</p>
+          <p className="text-xs text-on-surface-variant leading-relaxed line-clamp-2">{role}</p>
         )}
       </div>
     </div>
