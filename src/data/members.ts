@@ -52,7 +52,7 @@ export const developmentTeam: BoardMember[] = [
     image: "" 
   },
   { 
-    name: _sc([82, 106, 113, 114, 106, 105, 37, 71, 257, 113, 106, 115, 105, 37, 90, 292, 122, 119]), 
+    name: _sc([82, 106, 109, 114, 106, 105, 37, 71, 257, 113, 106, 115, 105, 37, 90, 292, 122, 119]), 
     roleEn: "Developer", 
     roleTr: "Geliştirici", 
     image: "" 
