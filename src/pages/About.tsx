@@ -91,14 +91,7 @@ export default function About() {
 
       <section className="bg-surface py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div className="md:col-span-2 bg-primary p-10 flex flex-col justify-between h-64 rounded-xl hover:-translate-y-1 transition-transform">
-              <span className="material-symbols-outlined text-white text-4xl">language</span>
-              <div>
-                <p className="text-white/80 text-sm font-medium uppercase tracking-widest mb-1">{t("about.operationalScope")}</p>
-                <h3 className="text-white text-3xl font-bold">{t("about.twoCountries")}</h3>
-              </div>
-            </div>
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
             <div className="bg-surface-container-high p-10 flex flex-col justify-between h-64 rounded-xl hover:-translate-y-1 transition-transform">
               <span className="material-symbols-outlined text-tertiary text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>groups</span>
               <div>
@@ -107,10 +100,17 @@ export default function About() {
               </div>
             </div>
             <div className="bg-surface-container-lowest p-10 flex flex-col justify-between h-64 rounded-xl shadow-sm hover:-translate-y-1 transition-transform">
-              <span className="material-symbols-outlined text-primary text-4xl">event_available</span>
+              <span className="material-symbols-outlined text-primary text-4xl">workspace_premium</span>
               <div>
-                <p className="text-on-surface-variant text-sm font-medium uppercase tracking-widest mb-1">{t("about.annualEvents")}</p>
-                <h3 className="text-on-surface text-3xl font-bold">{t("about.annualEventsValue")}</h3>
+                <p className="text-on-surface-variant text-sm font-medium uppercase tracking-widest mb-1">{t("about.experience")}</p>
+                <h3 className="text-on-surface text-3xl font-bold">{t("about.experienceValue")}</h3>
+              </div>
+            </div>
+            <div className="bg-primary p-10 flex flex-col justify-between h-56 rounded-xl hover:-translate-y-1 transition-transform md:col-span-2">
+              <span className="material-symbols-outlined text-white text-4xl">language</span>
+              <div>
+                <p className="text-white/80 text-sm font-medium uppercase tracking-widest mb-1">{t("about.operationalScope")}</p>
+                <h3 className="text-white text-3xl font-bold">{t("about.twoCountries")}</h3>
               </div>
             </div>
           </div>
