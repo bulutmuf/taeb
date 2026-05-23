@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { boardOfDirectors, advisoryBoard, developmentTeam, representatives, studentBoard } from "../data/members";
+import { boardOfDirectors, developmentTeam, representatives, studentBoard } from "../data/members";
 import MemberCard from "../components/MemberCard";
 import SectionHeading from "../components/SectionHeading";
 import PageSEO from "../components/PageSEO";
