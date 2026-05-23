@@ -4,6 +4,18 @@ import PageSEO from "../components/PageSEO";
 
 export default function About() {
   const { t } = useTranslation();
+  const historyItems = [
+    {
+      year: t("about.year2014"),
+      title: t("about.year2014Title"),
+      description: t("about.year2014Desc"),
+    },
+    {
+      year: t("about.year2026"),
+      title: t("about.year2026Title"),
+      description: t("about.year2026Desc"),
+    },
+  ];
 
   return (
     <>
