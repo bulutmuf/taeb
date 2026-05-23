@@ -66,18 +66,21 @@ export default function About() {
                 {t("about.historyDescription")}
               </p>
             </div>
-            <div className="md:w-2/3 space-y-16">
-              <div className="bg-surface-container-lowest p-12 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all group relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-1 bg-primary/20 group-hover:bg-primary transition-colors" />
-                <h3 className="text-5xl font-black text-surface-container-highest mb-6">{t("about.year2014")}</h3>
-                <h4 className="text-xl font-bold mb-4">{t("about.year2014Title")}</h4>
-                <p className="text-on-surface-variant leading-relaxed">{t("about.year2014Desc")}</p>
-              </div>
-              <div className="bg-surface-container-lowest p-12 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all group relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-1 bg-primary/20 group-hover:bg-primary transition-colors" />
-                <h3 className="text-5xl font-black text-surface-container-highest mb-6">{t("about.year2026")}</h3>
-                <h4 className="text-xl font-bold mb-4">{t("about.year2026Title")}</h4>
-                <p className="text-on-surface-variant leading-relaxed">{t("about.year2026Desc")}</p>
+            <div className="md:w-2/3 overflow-x-auto pb-4">
+              <div className="relative min-w-[640px] pt-12">
+                <div className="absolute top-16 left-0 right-0 h-px bg-outline-variant" />
+                <div className="grid grid-cols-2 gap-10">
+                  {historyItems.map((item) => (
+                    <div key={item.year} className="relative">
+                      <div className="relative z-10 mb-8 h-9 w-9 rounded-full border-4 border-surface-container-low bg-primary shadow-sm" />
+                      <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all">
+                        <h3 className="text-4xl font-black text-primary mb-5">{item.year}</h3>
+                        <h4 className="text-xl font-bold mb-4">{item.title}</h4>
+                        <p className="text-on-surface-variant leading-relaxed">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
