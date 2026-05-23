@@ -68,7 +68,7 @@ export default function About() {
             </div>
             <div className="md:w-2/3 overflow-x-auto pb-4">
               <div className="relative min-w-[640px] pt-12">
-                <div className="absolute top-16 left-0 right-0 h-px bg-outline-variant" />
+                <div className="absolute top-16 left-0 right-0 h-0.5 bg-primary/25" />
                 <div className="grid grid-cols-2 gap-10">
                   {historyItems.map((item) => (
                     <div key={item.year} className="relative">
