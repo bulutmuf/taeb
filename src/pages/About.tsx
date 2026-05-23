@@ -95,18 +95,18 @@ export default function About() {
             <div className="bg-surface-container-high p-10 flex flex-col justify-between h-64 rounded-xl hover:-translate-y-1 transition-transform">
               <span className="material-symbols-outlined text-tertiary text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>groups</span>
               <div>
-                <p className="text-on-surface-variant text-sm font-medium uppercase tracking-widest mb-1">{t("about.memberCount")}</p>
-                <h3 className="text-on-surface text-3xl font-bold">{t("about.memberCountValue")}</h3>
+                <h3 className="text-on-surface text-5xl font-black tracking-tight mb-3">{t("about.memberCountValue")}</h3>
+                <p className="text-on-surface-variant text-sm font-medium uppercase tracking-widest">{t("about.memberCount")}</p>
               </div>
             </div>
             <div className="bg-surface-container-lowest p-10 flex flex-col justify-between h-64 rounded-xl shadow-sm hover:-translate-y-1 transition-transform">
               <span className="material-symbols-outlined text-primary text-4xl">workspace_premium</span>
               <div>
-                <p className="text-on-surface-variant text-sm font-medium uppercase tracking-widest mb-1">{t("about.experience")}</p>
-                <h3 className="text-on-surface text-3xl font-bold">{t("about.experienceValue")}</h3>
+                <h3 className="text-on-surface text-5xl font-black tracking-tight mb-3">{t("about.experienceValue")}</h3>
+                <p className="text-on-surface-variant text-sm font-medium uppercase tracking-widest">{t("about.experience")}</p>
               </div>
             </div>
-            <div className="bg-primary p-10 flex flex-col justify-between h-56 rounded-xl hover:-translate-y-1 transition-transform md:col-span-2">
+            <div className="bg-primary p-10 flex flex-col items-center justify-center text-center h-56 rounded-xl hover:-translate-y-1 transition-transform md:col-span-2">
               <span className="material-symbols-outlined text-white text-4xl">language</span>
               <div>
                 <p className="text-white/80 text-sm font-medium uppercase tracking-widest mb-1">{t("about.operationalScope")}</p>
