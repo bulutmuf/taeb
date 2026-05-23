@@ -108,12 +108,12 @@ export default function Home() {
 
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div className="mb-16 flex justify-center">
             <SectionHeading
               title={t("home.impactTitle")}
               description={t("home.impactDescription")}
+              alignment="center"
             />
-            <div className="hidden md:block h-[2px] flex-grow mx-12 bg-outline-variant opacity-20" />
           </div>
 
           <div className="relative mx-auto max-w-3xl">
