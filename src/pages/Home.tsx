@@ -13,6 +13,30 @@ export default function Home() {
   const lang = i18n.language;
   const headlineAccent = t("home.headlineAccent");
   const [typedAccent, setTypedAccent] = useState(headlineAccent);
+  const [activeImpactIndex, setActiveImpactIndex] = useState(0);
+  const impactStats = [
+    {
+      value: t("home.totalScholarship"),
+      label: t("home.totalScholarshipLabel"),
+      description: t("home.totalScholarshipDesc"),
+    },
+    {
+      value: t("home.masterScholarship"),
+      label: t("home.masterScholarshipLabel"),
+      description: t("home.masterScholarshipDesc"),
+    },
+    {
+      value: t("home.freeInternship"),
+      label: t("home.freeInternshipLabel"),
+      description: t("home.freeInternshipDesc"),
+    },
+  ];
+  const showPreviousImpact = () => {
+    setActiveImpactIndex((current) => (current === 0 ? impactStats.length - 1 : current - 1));
+  };
+  const showNextImpact = () => {
+    setActiveImpactIndex((current) => (current + 1) % impactStats.length);
+  };
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -92,25 +116,57 @@ export default function Home() {
             <div className="hidden md:block h-[2px] flex-grow mx-12 bg-outline-variant opacity-20" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <StatCard
-              value={t("home.totalScholarship")}
-              label={t("home.totalScholarshipLabel")}
-              description={t("home.totalScholarshipDesc")}
-              theme="tertiary"
-            />
-            <StatCard
-              value={t("home.masterScholarship")}
-              label={t("home.masterScholarshipLabel")}
-              description={t("home.masterScholarshipDesc")}
-              theme="tertiary"
-            />
-            <StatCard
-              value={t("home.freeInternship")}
-              label={t("home.freeInternshipLabel")}
-              description={t("home.freeInternshipDesc")}
-              theme="tertiary"
-            />
+          <div className="relative mx-auto max-w-3xl">
+            <div className="overflow-hidden rounded-xl">
+              <div
+                className="flex transition-transform duration-500 ease-out"
+                style={{ transform: `translateX(-${activeImpactIndex * 100}%)` }}
+              >
+                {impactStats.map((stat) => (
+                  <div key={stat.label} className="min-w-full px-1">
+                    <StatCard
+                      value={stat.value}
+                      label={stat.label}
+                      description={stat.description}
+                      theme="tertiary"
+                      className="min-h-[300px]"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="mt-8 flex items-center justify-center gap-4">
+              <button
+                type="button"
+                onClick={showPreviousImpact}
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-surface-container-lowest text-primary shadow-sm transition-colors hover:bg-surface-container-high"
+                aria-label="Previous impact metric"
+              >
+                <span className="material-symbols-outlined">chevron_left</span>
+              </button>
+              <div className="flex items-center gap-2">
+                {impactStats.map((stat, index) => (
+                  <button
+                    key={stat.label}
+                    type="button"
+                    onClick={() => setActiveImpactIndex(index)}
+                    className={`h-2.5 rounded-full transition-all ${
+                      activeImpactIndex === index ? "w-8 bg-primary" : "w-2.5 bg-outline-variant"
+                    }`}
+                    aria-label={`Show ${stat.label}`}
+                    aria-current={activeImpactIndex === index}
+                  />
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={showNextImpact}
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-surface-container-lowest text-primary shadow-sm transition-colors hover:bg-surface-container-high"
+                aria-label="Next impact metric"
+              >
+                <span className="material-symbols-outlined">chevron_right</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
