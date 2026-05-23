@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { upcomingEvents } from "../data/events";
@@ -10,6 +11,30 @@ import PageSEO from "../components/PageSEO";
 export default function Home() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
+  const headlineAccent = t("home.headlineAccent");
+  const [typedAccent, setTypedAccent] = useState(headlineAccent);
+
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prefersReducedMotion) {
+      setTypedAccent(headlineAccent);
+      return;
+    }
+
+    setTypedAccent("");
+    let index = 0;
+    const intervalId = window.setInterval(() => {
+      index += 1;
+      setTypedAccent(headlineAccent.slice(0, index));
+
+      if (index >= headlineAccent.length) {
+        window.clearInterval(intervalId);
+      }
+    }, 85);
+
+    return () => window.clearInterval(intervalId);
+  }, [headlineAccent]);
 
   return (
     <>
@@ -31,7 +56,10 @@ export default function Home() {
             </span>
             <h1 className="mb-8 text-5xl font-extrabold tracking-normal text-white md:text-7xl lg:text-8xl">
               <span className="block">{t("home.headline")}</span>
-              <span className="block text-primary-container italic">{t("home.headlineAccent")}</span>
+              <span className="block text-primary-container italic" aria-label={headlineAccent}>
+                {typedAccent}
+                <span className="home-typewriter-caret" aria-hidden="true" />
+              </span>
             </h1>
             <p className="mb-10 max-w-3xl text-xl leading-relaxed text-white/84 md:text-2xl">
               {t("home.description")}
