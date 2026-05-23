@@ -26,14 +26,16 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="max-w-4xl">
-            <SectionHeading
-              badge={t("home.badge")}
-              title={t("home.headline")}
-              titleAccent={t("home.headlineAccent")}
-              description={t("home.description")}
-              badgeTheme="surface"
-              className="mb-10"
-            />
+            <span className="inline-block px-3 py-1 font-bold text-[0.65rem] tracking-[0.15em] rounded mb-5 uppercase bg-surface-container-high text-primary">
+              {t("home.badge")}
+            </span>
+            <h1 className="mb-8 text-5xl font-extrabold tracking-normal text-white md:text-7xl lg:text-8xl">
+              <span className="block">{t("home.headline")}</span>
+              <span className="block text-primary-container italic">{t("home.headlineAccent")}</span>
+            </h1>
+            <p className="mb-10 max-w-3xl text-xl leading-relaxed text-white/84 md:text-2xl">
+              {t("home.description")}
+            </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/membership"
