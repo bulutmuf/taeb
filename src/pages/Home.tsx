@@ -60,6 +60,14 @@ export default function Home() {
     return () => window.clearInterval(intervalId);
   }, [headlineAccent]);
 
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setActiveImpactIndex((current) => (current + 1) % impactStats.length);
+    }, 8000);
+
+    return () => window.clearInterval(intervalId);
+  }, [impactStats.length]);
+
   return (
     <>
       <PageSEO titleKey="seo.homeTitle" descriptionKey="seo.homeDesc" />
