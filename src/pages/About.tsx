@@ -32,7 +32,7 @@ export default function About() {
                 <span className="material-symbols-outlined text-tertiary text-xl md:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>
                   stars
                 </span>
-                <span className="text-tertiary font-bold tracking-tighter text-xl md:text-2xl">
+                <span className="text-tertiary font-black tracking-tighter text-4xl md:text-6xl leading-none">
                   {t("about.activeMembersCount")}
                 </span>
               </div>
