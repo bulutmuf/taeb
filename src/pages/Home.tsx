@@ -14,14 +14,18 @@ export default function Home() {
   return (
     <>
       <PageSEO titleKey="seo.homeTitle" descriptionKey="seo.homeDesc" />
-      <section className="relative min-h-[700px] flex items-center bg-surface pt-16 md:pt-0 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-primary-container rounded-full blur-[120px]" />
-          <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-tertiary-container rounded-full blur-[100px]" />
-        </div>
+      <section className="relative min-h-[760px] flex items-center bg-on-surface pt-24 md:pt-0 overflow-hidden">
+        <img
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+          src={homeRight}
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-on-surface/90 via-on-surface/68 to-on-surface/18" />
+        <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-surface-container-low to-transparent pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center relative z-10">
-          <div className="md:col-span-7">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
+          <div className="max-w-4xl">
             <SectionHeading
               badge={t("home.badge")}
               title={t("home.headline")}
@@ -45,21 +49,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-
-          <div className="md:col-span-5 relative">
-            <div className="aspect-[3/2] rounded-xl overflow-hidden shadow-2xl relative">
-              <img
-                alt="Professional meeting environment"
-                className="w-full h-full object-cover"
-                src={homeRight}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent" />
-            </div>
-          </div>
         </div>
-
-        {/* Smooth Transition Divider */}
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-surface-container-low to-transparent pointer-events-none" />
       </section>
 
       <section className="py-24 bg-surface-container-low">
