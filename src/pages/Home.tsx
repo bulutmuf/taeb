@@ -94,21 +94,18 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <StatCard
-              icon="payments"
               value={t("home.totalScholarship")}
               label={t("home.totalScholarshipLabel")}
               description={t("home.totalScholarshipDesc")}
               theme="tertiary"
             />
             <StatCard
-              icon="school"
               value={t("home.masterScholarship")}
               label={t("home.masterScholarshipLabel")}
               description={t("home.masterScholarshipDesc")}
               theme="tertiary"
             />
             <StatCard
-              icon="flight_takeoff"
               value={t("home.freeInternship")}
               label={t("home.freeInternshipLabel")}
               description={t("home.freeInternshipDesc")}

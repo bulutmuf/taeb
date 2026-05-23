@@ -1,5 +1,4 @@
 interface StatCardProps {
-  icon: string;
   value: string;
   label: string;
   description: string;
@@ -8,7 +7,6 @@ interface StatCardProps {
 }
 
 export default function StatCard({
-  icon,
   value,
   label,
   description,
@@ -27,10 +25,8 @@ export default function StatCard({
 
   return (
     <div className={`bg-surface-container-lowest p-10 rounded-xl hover:-translate-y-1 transition-transform shadow-sm ${className}`}>
-      <div className={`w-14 h-14 rounded-lg flex items-center justify-center mb-8 ${colors.bg}`}>
-        <span className={`material-symbols-outlined text-3xl flex-shrink-0 ${colors.text}`}>{icon}</span>
-      </div>
-      <div className="text-4xl font-black text-on-surface mb-2">{value}</div>
+      <div className={`mb-8 h-1.5 w-16 rounded-full ${colors.bg}`} />
+      <div className={`text-6xl md:text-7xl font-black tracking-tight mb-4 ${colors.text}`}>{value}</div>
       <div className="text-sm font-bold text-on-surface-variant uppercase tracking-widest">{label}</div>
       <p className="mt-4 text-on-surface-variant text-sm leading-relaxed">{description}</p>
     </div>
