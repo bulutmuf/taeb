@@ -175,3 +175,25 @@ body {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+.home-typewriter-caret {
+  display: inline-block;
+  width: 0.08em;
+  height: 0.82em;
+  margin-left: 0.08em;
+  background: currentColor;
+  animation: homeCaretBlink 0.85s step-end infinite;
+  vertical-align: -0.05em;
+}
+
+@keyframes homeCaretBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-typewriter-caret {
+    animation: none;
+    opacity: 0;
+  }
+}
