@@ -27,7 +27,7 @@ export default function About() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaRJgWd0erUB2GBKflieqwbBymLTGCiWsLYk7Gzih5Qa8wHVneqHoRsRUQ6aT5jPdArQUyKfOJIThEZqsmY5PCobkkvBl1p31fuzMMBfr_U5LoTM61fhlYVMasWFcwHLPmLhvP1wcBip0-t4tRNyxFL7wIuCIw80rSvEO9fNvPOkLZjyrEYq7eSAcJESeXZ-hZRSt_ZaxLNxr_-TSEOJnzepFmkDG2KxIbDCipPeiQyL_8YQ_NWja60t5T2o6DBq-Fp5chhyQsvZY"
               />
             </div>
-            <div className="absolute bottom-4 left-4 md:-bottom-6 md:-left-6 bg-surface-container-lowest p-4 md:p-8 shadow-lg max-w-[180px] md:max-w-[240px] z-10 transition-all duration-300">
+            <div className="absolute top-4 left-4 md:-top-6 md:-left-6 bg-surface-container-lowest p-4 md:p-8 shadow-lg max-w-[180px] md:max-w-[240px] z-10 transition-all duration-300">
               <div className="flex items-center gap-2 mb-2">
                 <span className="material-symbols-outlined text-tertiary text-xl md:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>
                   stars
