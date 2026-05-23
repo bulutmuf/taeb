@@ -72,9 +72,11 @@ export default function About() {
                 <div className="grid grid-cols-2 gap-10">
                   {historyItems.map((item) => (
                     <div key={item.year} className="relative">
-                      <div className="relative z-10 mb-8 h-9 w-9 rounded-full border-4 border-surface-container-low bg-primary shadow-sm" />
+                      <div className="relative z-10 mb-8 flex items-center gap-4">
+                        <div className="h-9 w-9 rounded-full border-4 border-surface-container-low bg-primary shadow-sm" />
+                        <h3 className="text-4xl font-black text-primary">{item.year}</h3>
+                      </div>
                       <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all">
-                        <h3 className="text-4xl font-black text-primary mb-5">{item.year}</h3>
                         <h4 className="text-xl font-bold mb-4">{item.title}</h4>
                         <p className="text-on-surface-variant leading-relaxed">{item.description}</p>
                       </div>
