@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import SectionHeading from "../components/SectionHeading";
 import PageSEO from "../components/PageSEO";
+import libertyGalata from "../assets/liberty_galata.png";
 
 export default function About() {
   const { t } = useTranslation();
@@ -9,6 +10,31 @@ export default function About() {
       year: t("about.year2014"),
       title: t("about.year2014Title"),
       description: t("about.year2014Desc"),
+    },
+    {
+      year: t("about.year2018"),
+      title: t("about.year2018Title"),
+      description: t("about.year2018Desc"),
+    },
+    {
+      year: t("about.year2019"),
+      title: t("about.year2019Title"),
+      description: t("about.year2019Desc"),
+    },
+    {
+      year: t("about.year2020_1"),
+      title: t("about.year2020_1Title"),
+      description: t("about.year2020_1Desc"),
+    },
+    {
+      year: t("about.year2020_2"),
+      title: t("about.year2020_2Title"),
+      description: t("about.year2020_2Desc"),
+    },
+    {
+      year: t("about.year2021"),
+      title: t("about.year2021Title"),
+      description: t("about.year2021Desc"),
     },
     {
       year: t("about.year2026"),
@@ -36,7 +62,7 @@ export default function About() {
               <img
                 className="w-full h-full object-cover relative z-0"
                 alt="International cooperation"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaRJgWd0erUB2GBKflieqwbBymLTGCiWsLYk7Gzih5Qa8wHVneqHoRsRUQ6aT5jPdArQUyKfOJIThEZqsmY5PCobkkvBl1p31fuzMMBfr_U5LoTM61fhlYVMasWFcwHLPmLhvP1wcBip0-t4tRNyxFL7wIuCIw80rSvEO9fNvPOkLZjyrEYq7eSAcJESeXZ-hZRSt_ZaxLNxr_-TSEOJnzepFmkDG2KxIbDCipPeiQyL_8YQ_NWja60t5T2o6DBq-Fp5chhyQsvZY"
+                src={libertyGalata}
               />
             </div>
             <div className="absolute top-4 left-4 md:-top-6 md:-left-6 bg-surface-container-lowest p-5 md:p-8 shadow-lg max-w-[220px] md:max-w-[280px] z-10 transition-all duration-300">
@@ -67,18 +93,18 @@ export default function About() {
               </p>
             </div>
             <div className="md:w-2/3 overflow-x-auto pb-4">
-              <div className="relative min-w-[640px] pt-12">
+              <div className="relative pt-12 min-w-max">
                 <div className="absolute top-16 left-0 right-0 h-0.5 bg-primary/25" />
-                <div className="grid grid-cols-2 gap-10">
+                <div className="flex gap-8 pr-8">
                   {historyItems.map((item) => (
-                    <div key={item.year} className="relative">
+                    <div key={item.year + item.title} className="relative w-80 flex-shrink-0">
                       <div className="relative z-10 mb-8 flex items-center gap-4">
                         <div className="h-9 w-9 rounded-full border-4 border-surface-container-low bg-primary shadow-sm" />
                         <h3 className="text-4xl font-black text-primary">{item.year}</h3>
                       </div>
-                      <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all">
-                        <h4 className="text-xl font-bold mb-4">{item.title}</h4>
-                        <p className="text-on-surface-variant leading-relaxed">{item.description}</p>
+                      <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 hover:shadow-md transition-all h-52 overflow-y-auto">
+                        <h4 className="text-lg font-bold mb-2 line-clamp-2">{item.title}</h4>
+                        <p className="text-on-surface-variant text-sm leading-relaxed">{item.description}</p>
                       </div>
                     </div>
                   ))}
