@@ -6,6 +6,7 @@ export interface ContactInfo {
     linkedin: string;
     instagram: string;
     twitter: string;
+    youtube: string;
   };
 }
 
@@ -16,6 +17,7 @@ export const contactInfo: ContactInfo = {
   social: {
     linkedin: "https://www.linkedin.com/company/turkish-american-pharmacist-association/",
     instagram: "https://www.instagram.com/taeb.usa",
-    twitter: "https://www.twitter.com/taeb_official"
+    twitter: "https://www.twitter.com/taeb_official",
+    youtube: "https://www.youtube.com/results?search_query=TAEB+Türk+Amerikan+Eczacılar"
   }
 };

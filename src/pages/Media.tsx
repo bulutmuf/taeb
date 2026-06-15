@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import BlogSection from "../components/media/BlogSection";
+import FaqSection from "../components/media/FaqSection";
 import MagazineSection from "../components/media/MagazineSection";
 import WebinarSection from "../components/media/WebinarSection";
 import PageSEO from "../components/PageSEO";
@@ -23,6 +24,7 @@ export default function Media() {
       </section>
 
       <div className="max-w-7xl mx-auto px-6">
+        <FaqSection />
         <BlogSection />
         <MagazineSection />
         <WebinarSection />
