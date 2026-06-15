@@ -12,28 +12,37 @@ export default function Internship() {
     <>
       <PageSEO titleKey="seo.internshipTitle" descriptionKey="seo.internshipDesc" />
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-16">
-        <SectionHeading
-          badge="TAEB"
-          title={t("internship.headline")}
-          description={t("internship.description")}
-          badgeTheme="surface"
-        />
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <SectionHeading
+            badge="TAEB"
+            title={t("internship.headline")}
+            description={t("internship.description")}
+            badgeTheme="surface"
+          />
+          <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src="/images/about/amerika-turkiye.jpeg"
+              alt={t("internship.headline")}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
       </section>
 
       <section className="py-20 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
             <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-white flex flex-col items-center text-center">
-              <span className="text-3xl font-black text-primary mb-2">100+</span>
+              <span className="text-3xl font-black text-primary mb-2">150+</span>
               <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">{t("internship.stats.interns")}</span>
             </div>
             <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-white flex flex-col items-center text-center">
-              <span className="text-3xl font-black text-primary mb-2">20+</span>
-              <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">{t("internship.stats.countries")}</span>
+              <span className="text-3xl font-black text-primary mb-2">{t("internship.stats.sinceYear")}</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">{t("internship.stats.sinceLabel")}</span>
             </div>
             <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-white flex flex-col items-center text-center">
-              <span className="text-3xl font-black text-primary mb-2">2013</span>
-              <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">{t("internship.stats.founded")}</span>
+              <span className="text-3xl font-black text-primary mb-2">$2,500</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">{t("internship.stats.scholarship")}</span>
             </div>
           </div>
 
