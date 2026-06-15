@@ -14,13 +14,11 @@ export default function About() {
       year: t("about.year2018"),
       title: t("about.year2018Title"),
       description: t("about.year2018Desc"),
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA8UjoxTvRoftVq33kobTAiakmc0buf9fJqB9FDAODdQ-5vcnYphht-FdDWvx1cvJO0IAwt3x9zDs42YXOFQ7CBsiS7UdNOR_kc376L3paQUg2aEldaGr8iMl5CYz3xvqfIJmR-OHah4XAGBfAS3HxPLd8P1SJZ1H1tliE2GyzSn7yq6BTFfjY6xFQkyIO3MeHgVmwd-oAyoBBwraL4_pTPBJcbmbas4WQR9qD3zqrE4NEKUB24RxLFcdN_qmirVpYHebVgrggL-AU",
     },
     {
       year: t("about.year2019"),
       title: t("about.year2019Title"),
       description: t("about.year2019Desc"),
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCN_Cb0x_UlbiE38rKSztRDICV8YjYoKkqV07wWsUBQm5pwJgv40buUH6hxZIMyYC4p38vhTvSA8n0ORzKVMJj3w5PbTolGmcp6soR1qRgXS26fLPA5mOfbBy87QOeR__Lb7hLe17BcWwdyY5qDa-Xr77NtcqbiK197YWhgAFHqaZsYPRxooqJ7f6PCG5V9fjzkm4AcYVV4bjS9gimUV78pUMKkKgxcu4DTOAZZZUwyJG2qsRJQYy6XgVYtAFb_VtxBl3YqxWxFY-U",
     },
     {
       year: t("about.year2020_1"),
@@ -47,38 +45,43 @@ export default function About() {
   return (
     <>
       <PageSEO titleKey="seo.aboutTitle" descriptionKey="seo.aboutDesc" />
-      <section className="relative bg-surface pt-16 pb-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          <div>
+      <section className="relative min-h-[760px] flex items-center bg-on-surface pt-24 md:pt-0 overflow-hidden">
+        <img
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+          src="/images/about/amerika-turkiye.jpeg"
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-on-surface/90 via-on-surface/68 to-on-surface/18" />
+        <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-surface-container-low to-transparent pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
+          <div className="max-w-4xl">
             <SectionHeading
               badge={t("about.badge")}
               badgeTheme="tertiary"
               title={t("about.headline")}
               titleAccent={t("about.headlineAccent")}
               description={t("about.description")}
+              className="[&_h2]:text-white [&_h2_span]:text-primary-container [&_p]:text-white/84"
             />
           </div>
-          <div className="relative">
-            <div className="aspect-[16/10] rounded-xl overflow-hidden shadow-2xl">
-              <img
-                className="w-full h-full object-cover relative z-0"
-                alt="Statue of Liberty and Galata Tower"
-                src="/images/about/amerika-turkiye.jpeg"
-              />
+
+          <div className="absolute top-4 right-6 md:top-auto md:bottom-8 md:right-6 bg-surface-container-lowest p-5 md:p-8 shadow-lg max-w-[220px] md:max-w-[280px]">
+            <div className="flex items-start gap-2 mb-3">
+              <span
+                className="material-symbols-outlined text-tertiary text-xl md:text-2xl"
+                style={{ fontVariationSettings: "'FILL' 1" }}
+              >
+                stars
+              </span>
+              <span className="text-tertiary font-black tracking-tighter text-4xl md:text-6xl leading-none">
+                {t("about.activeMembersCount")}
+              </span>
             </div>
-            <div className="absolute top-4 left-4 md:-top-6 md:-left-6 bg-surface-container-lowest p-5 md:p-8 shadow-lg max-w-[220px] md:max-w-[280px] z-10 transition-all duration-300">
-              <div className="flex items-start gap-2 mb-3">
-                <span className="material-symbols-outlined text-tertiary text-xl md:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>
-                  stars
-                </span>
-                <span className="text-tertiary font-black tracking-tighter text-4xl md:text-6xl leading-none">
-                  {t("about.activeMembersCount")}
-                </span>
-              </div>
-              <p className="text-[10px] md:text-xs font-semibold text-on-surface-variant uppercase tracking-widest leading-tight">
-                {t("about.activeMembersLabel")}
-              </p>
-            </div>
+            <p className="text-[10px] md:text-xs font-semibold text-on-surface-variant uppercase tracking-widest leading-tight">
+              {t("about.activeMembersLabel")}
+            </p>
           </div>
         </div>
       </section>
@@ -99,15 +102,6 @@ export default function About() {
                 <div className="flex gap-8 pr-8">
                   {historyItems.map((item) => (
                     <div key={item.year + item.title} className="relative w-80 flex-shrink-0">
-                      {item.image && (
-                        <div className="mb-4 aspect-[4/3] overflow-hidden rounded-xl shadow-sm">
-                          <img
-                            src={item.image}
-                            alt={item.title}
-                            className="h-full w-full object-cover"
-                          />
-                        </div>
-                      )}
                       <div className="relative z-10 mb-8 flex items-center gap-4">
                         <div className="h-9 w-9 rounded-full border-4 border-surface-container-low bg-primary shadow-sm" />
                         <h3 className="text-4xl font-black text-primary">{item.year}</h3>
