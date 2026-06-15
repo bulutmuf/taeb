@@ -144,7 +144,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full sticky top-0 z-50 bg-white/90 backdrop-blur-xl shadow-sm">
+    <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-xl shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <NavLink to="/" className="flex items-center gap-2 group">
           <img src={logo} alt="TAEB Logo" className="h-14 w-auto transition-transform group-hover:scale-105" />

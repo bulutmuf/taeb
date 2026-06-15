@@ -12,10 +12,8 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen flex flex-col font-sans bg-surface text-on-surface select-none">
-      <div className="select-text">
-        <Navbar />
-      </div>
-      <main className="flex-grow pt-0 fade-in" key={pathname}>
+      <Navbar />
+      <main className="flex-grow pt-[88px] fade-in" key={pathname}>
         <Outlet />
       </main>
       <div className="select-text">
