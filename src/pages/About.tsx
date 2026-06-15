@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import SectionHeading from "../components/SectionHeading";
 import PageSEO from "../components/PageSEO";
-import libertyGalata from "../assets/liberty_galata.png";
 
 export default function About() {
   const { t } = useTranslation();
@@ -15,11 +14,13 @@ export default function About() {
       year: t("about.year2018"),
       title: t("about.year2018Title"),
       description: t("about.year2018Desc"),
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA8UjoxTvRoftVq33kobTAiakmc0buf9fJqB9FDAODdQ-5vcnYphht-FdDWvx1cvJO0IAwt3x9zDs42YXOFQ7CBsiS7UdNOR_kc376L3paQUg2aEldaGr8iMl5CYz3xvqfIJmR-OHah4XAGBfAS3HxPLd8P1SJZ1H1tliE2GyzSn7yq6BTFfjY6xFQkyIO3MeHgVmwd-oAyoBBwraL4_pTPBJcbmbas4WQR9qD3zqrE4NEKUB24RxLFcdN_qmirVpYHebVgrggL-AU",
     },
     {
       year: t("about.year2019"),
       title: t("about.year2019Title"),
       description: t("about.year2019Desc"),
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCN_Cb0x_UlbiE38rKSztRDICV8YjYoKkqV07wWsUBQm5pwJgv40buUH6hxZIMyYC4p38vhTvSA8n0ORzKVMJj3w5PbTolGmcp6soR1qRgXS26fLPA5mOfbBy87QOeR__Lb7hLe17BcWwdyY5qDa-Xr77NtcqbiK197YWhgAFHqaZsYPRxooqJ7f6PCG5V9fjzkm4AcYVV4bjS9gimUV78pUMKkKgxcu4DTOAZZZUwyJG2qsRJQYy6XgVYtAFb_VtxBl3YqxWxFY-U",
     },
     {
       year: t("about.year2020_1"),
@@ -58,11 +59,11 @@ export default function About() {
             />
           </div>
           <div className="relative">
-            <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+            <div className="aspect-[16/10] rounded-xl overflow-hidden shadow-2xl">
               <img
                 className="w-full h-full object-cover relative z-0"
-                alt="International cooperation"
-                src={libertyGalata}
+                alt="Statue of Liberty and Galata Tower"
+                src="/images/about/amerika-turkiye.jpeg"
               />
             </div>
             <div className="absolute top-4 left-4 md:-top-6 md:-left-6 bg-surface-container-lowest p-5 md:p-8 shadow-lg max-w-[220px] md:max-w-[280px] z-10 transition-all duration-300">
@@ -98,6 +99,15 @@ export default function About() {
                 <div className="flex gap-8 pr-8">
                   {historyItems.map((item) => (
                     <div key={item.year + item.title} className="relative w-80 flex-shrink-0">
+                      {item.image && (
+                        <div className="mb-4 aspect-[4/3] overflow-hidden rounded-xl shadow-sm">
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="h-full w-full object-cover"
+                          />
+                        </div>
+                      )}
                       <div className="relative z-10 mb-8 flex items-center gap-4">
                         <div className="h-9 w-9 rounded-full border-4 border-surface-container-low bg-primary shadow-sm" />
                         <h3 className="text-4xl font-black text-primary">{item.year}</h3>
@@ -169,8 +179,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-
     </>
   );
 }
