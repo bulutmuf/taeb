@@ -44,16 +44,6 @@ export default function Events() {
             {pastEvents.map((event) => (
               <EventCard key={event.id} event={event} variant="past" lang={lang} t={t} />
             ))}
-
-            <div className="group opacity-40 hover:opacity-100 transition-opacity">
-              <div className="aspect-[4/3] flex items-center justify-center rounded-lg mb-6 border-2 border-dashed border-outline-variant bg-surface-container-low">
-                <span className="material-symbols-outlined text-4xl text-outline-variant">history</span>
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-extrabold tracking-tight text-outline">{t("events.archiveTitle")}</h3>
-                <p className="text-sm text-on-surface-variant">{t("events.archiveDescription")}</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
