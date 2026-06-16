@@ -18,7 +18,7 @@ export default function Internship() {
             alt={t("internship.headline")}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-surface/40 via-surface/80 to-surface-container-low"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-surface/10 via-surface/50 to-surface-container-low"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center text-center">
