@@ -86,7 +86,7 @@ export const pastEvents: Event[] = [
     type: "Summit",
     time: "",
     location: "Istanbul",
-    // image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA8UjoxTvRoftVq33kobTAiakmc0buf9fJqB9FDAODdQ-5vcnYphht-FdDWvx1cvJO0IAwt3x9zDs42YXOFQ7CBsiS7UdNOR_kc376L3paQUg2aEldaGr8iMl5CYz3xvqfIJmR-OHah4XAGBfAS3HxPLd8P1SJZ1H1tliE2GyzSn7yq6BTFfjY6xFQkyIO3MeHgVmwd-oAyoBBwraL4_pTPBJcbmbas4WQR9qD3zqrE4NEKUB24RxLFcdN_qmirVpYHebVgrggL-AU",
+    image: "/images/events/flying-pharmacists.jpeg",
   },
   {
     id: "pfizer-ceo",
@@ -103,7 +103,7 @@ export const pastEvents: Event[] = [
     type: "Summit",
     time: "",
     location: "New York",
-    // image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDhB7NCqnKlUnwc1smV3s4aTmFkW2LyW_Jz-kw-IIGu3ofEKzlnMoypc7K5ftuu_uWmkv9-luFmb1KZNxd81WoF2B7JoVUh_CayCPO5NXhoIcuvW1YbVX5HIwjrtJRyPTT-P6Zq2CKyf6n0U4AhRroLIY11ZgAYJb2-otMEIwoQh_Y6-EK7k108SfI6LTXGQz3uCHOquRIBti9m5QUbdmFUu4UYUao1M9sKPK1CBTyk9CaETHkigumDBYfBObWZcszflfzKmBfYPRM",
+    image: "/images/events/pfizer-ceo.jpeg",
   },
   {
     id: "traditional-picnic",
@@ -120,7 +120,7 @@ export const pastEvents: Event[] = [
     type: "Social",
     time: "",
     location: "New Jersey",
-    // image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCN_Cb0x_UlbiE38rKSztRDICV8YjYoKkqV07wWsUBQm5pwJgv40buUH6hxZIMyYC4p38vhTvSA8n0ORzKVMJj3w5PbTolGmcp6soR1qRgXS26fLPA5mOfbBy87QOeR__Lb7hLe17BcWwdyY5qDa-Xr77NtcqbiK197YWhgAFHqaZsYPRxooqJ7f6PCG5V9fjzkm4AcYVV4bjS9gimUV78pUMKkKgxcu4DTOAZZZUwyJG2qsRJQYy6XgVYtAFb_VtxBl3YqxWxFY-U",
+    image: "/images/events/traditional-picnic.jpeg",
   },
   {
     id: "nyc-trip",
@@ -137,7 +137,7 @@ export const pastEvents: Event[] = [
     type: "Networking",
     time: "",
     location: "New York",
-    // image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYBi3R5bRJsUiipQXxnSAhXucp9A9duqojioS6no5ilotD5gsCDELY25q8fw-TaGh8lcxAX1tgrFVnFbgKDxMWZhzb-74r4GqX_2-5nRSGZXeCzlGRPsLUwkLHiZaxPbn_eZ3cJ-WVjs4R-Hch0KndJgpAwy3G8E5VuFcwZ1NTmeRsOw964IFML2TZklCFpeMdGMuXbcUkHrzzun0B_UvskB74xG-iJDNlb4pl4A-a-w8OocAekgtrBNxJwlKnemKI9eDug3stBVQ",
+    image: "/images/events/nyc-trip.jpeg",
   },
   {
     id: "countless-seminars",
@@ -154,7 +154,7 @@ export const pastEvents: Event[] = [
     type: "Seminar",
     time: "",
     location: "USA / Turkey",
-    // image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAWK2f8NJKqXn5ZNW4QNcpgNtAioJdD-UC2Wm-65Hb68uY4ERAJUykwUm9niUBK369dRyjLjJTIQE8NIX9XTovhsOGZZeWBdAAJI3peXL0WL1kjQ9sQJSOwqkjwlsn2Xty4oAUq2UIHFYH5rs-NaeRQGHtEbnmdkS8tM9HqQ9A8VLaowoRaVomzC8AUJWeief6bwIEB4yXRnQMMYor3Jyi9icgYNUSr22WOB5CurotensB5DDBNgbeTUDuLLI1Wv5FVownJiFwYY8k",
+    image: "/images/events/countless-seminars.jpeg",
   },
   {
     id: "istanbul-meeting-2025",
@@ -171,7 +171,7 @@ export const pastEvents: Event[] = [
     type: "Meeting",
     time: "",
     location: "Istanbul",
-    // image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB7_LLXoef-uoUnvcKpsRfsnhkmfD7F7Md5yzVpO1a7EvaIABpYltgEVJgj4-NkOX8VHUMBuV63z8AYWyBmiaDofAKeiR-F8beBDYfYrHp-DhEnIpmefmIyw9J6PIoIjDl5v5FypZ8HaB41WPfQmXiF_aqrHU1aAg-4YI3BngPCJvudVYidK3zWfFOXGa3TNTWogBbhZfUy54minGMuOCg6iE3wrnv3-8MuRU0LyazURq2THOEtlQn5LryBnJCrwG_dehXMfNW5BaU",
+    image: "/images/events/istanbul-meeting.jpeg",
   },
   {
     id: "ecology-101-event",
