@@ -68,20 +68,14 @@ export default function About() {
           </div>
 
           <div className="absolute top-4 right-6 md:top-auto md:bottom-8 md:right-6 bg-surface-container-lowest p-5 md:p-8 shadow-lg max-w-[220px] md:max-w-[280px]">
-            <div className="flex items-start gap-2 mb-3">
-              <span
-                className="material-symbols-outlined text-tertiary text-xl md:text-2xl"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                stars
-              </span>
-              <span className="text-tertiary font-black tracking-tighter text-4xl md:text-6xl leading-none">
+            <div className="flex flex-col items-start text-left">
+              <span className="text-tertiary font-black tracking-tighter text-4xl md:text-6xl leading-none mb-3">
                 {t("about.activeMembersCount")}
               </span>
+              <p className="text-[10px] md:text-xs font-semibold text-on-surface-variant uppercase tracking-widest leading-tight">
+                {t("about.activeMembersLabel")}
+              </p>
             </div>
-            <p className="text-[10px] md:text-xs font-semibold text-on-surface-variant uppercase tracking-widest leading-tight">
-              {t("about.activeMembersLabel")}
-            </p>
           </div>
         </div>
       </section>

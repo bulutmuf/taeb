@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { upcomingEvents } from "../data/events";
+import { pastEvents } from "../data/events";
 import homeRight from "../assets/home-right.jpg";
 import StatCard from "../components/StatCard";
 import EventCard from "../components/EventCard";
@@ -183,15 +183,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading
             badge={t("home.calendarLabel")}
-            title={t("home.upcomingEvents")}
+            title={t("events.pastTitle")}
             alignment="center"
             badgeTheme="surface"
             className="mb-16"
           />
 
-          <div className="space-y-4">
-            {upcomingEvents.slice(0, 3).map((event) => (
-              <EventCard key={event.id} event={event} variant="upcoming" lang={lang} t={t} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+            {pastEvents.slice(0, 3).map((event) => (
+              <EventCard key={event.id} event={event} variant="past" lang={lang} t={t} />
             ))}
           </div>
 
