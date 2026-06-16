@@ -28,7 +28,7 @@ export default function NotFound() {
             
             <Link
               to="/"
-              className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+              className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl"
             >
               <span className="material-symbols-outlined mr-2 text-[20px]">home</span>
               {t("notFound.backHome")}
