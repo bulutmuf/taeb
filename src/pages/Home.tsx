@@ -196,7 +196,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <Link to="/events" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
+            <Link to="/events" className="inline-flex items-center gap-2 text-primary font-bold transition-transform duration-300 hover:scale-105">
               {t("home.viewAllEvents")}
               <span className="material-symbols-outlined">arrow_right_alt</span>
             </Link>
