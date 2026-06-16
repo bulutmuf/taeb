@@ -4,8 +4,7 @@ import PageSEO from "../components/PageSEO";
 import { useFormValidation } from "../hooks/useFormValidation";
 
 export default function Membership() {
-  const { t, i18n } = useTranslation();
-  const lang = i18n.language;
+  const { t } = useTranslation();
   const { error, setError, isSubmitting, isSuccess, validateEmail, submitData } = useFormValidation();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
