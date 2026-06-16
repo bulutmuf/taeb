@@ -15,15 +15,15 @@ export default function EventCard({ event, variant = "upcoming", lang, t }: Even
   if (variant === "past") {
     return (
       <div className="group">
-        <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6 bg-surface-container-high">
-          {event.image && (
+        {event.image && (
+          <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6 bg-surface-container-high">
             <img
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               alt={title}
               src={event.image}
             />
-          )}
-        </div>
+          </div>
+        )}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <span className="text-xs font-bold text-primary tracking-widest uppercase">
