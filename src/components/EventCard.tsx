@@ -15,7 +15,6 @@ export default function EventCard({ event, variant = "upcoming", lang, t }: Even
   if (variant === "past") {
     return (
       <div className="group">
-        {/* Event images temporarily disabled
         <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6 bg-surface-container-high">
           {event.image && (
             <img
@@ -25,7 +24,6 @@ export default function EventCard({ event, variant = "upcoming", lang, t }: Even
             />
           )}
         </div>
-        */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <span className="text-xs font-bold text-primary tracking-widest uppercase">
