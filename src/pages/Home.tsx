@@ -183,7 +183,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading
             badge={t("home.calendarLabel")}
-            title={t("events.pastTitle")}
+            title={t("nav.events")}
             alignment="center"
             badgeTheme="surface"
             className="mb-16"
