@@ -193,6 +193,18 @@
     "emailTitle": "E-posta Gönderin",
     "officeTitle": "Ofisimizi Ziyaret Edin"
   },
+  "membership": {
+    "headline": "Üyelik Başvurusu",
+    "description": "Topluluğumuzun bir parçası olmak için başvurunuzu hemen yapın.",
+    "formTitle": "Başvuru Formu",
+    "phone": "Telefon",
+    "professionOrSchool": "Meslek / Okul",
+    "motivation": "Neden TAEB'e Katılmak İstiyorsunuz?",
+    "submit": "BAŞVURUYU GÖNDER",
+    "sending": "GÖNDERİLİYOR...",
+    "successMessage": "Başvurunuz Alındı!",
+    "successDescription": "Başvurunuz başarıyla alındı. Değerlendirme sonrası iletişime geçeceğiz."
+  },
   "footer": {
     "description": "Türkiye ve Amerika arasında profesyonel bağlar kuran, gelişimi ve işbirliğini önceliklendiren global bir sivil toplum kuruluşu.",
     "quickMenu": "Hızlı Menü",

@@ -193,6 +193,18 @@
     "emailTitle": "Send Email",
     "officeTitle": "Visit an Office"
   },
+  "membership": {
+    "headline": "Membership Application",
+    "description": "Apply now to become a part of our community.",
+    "formTitle": "Application Form",
+    "phone": "Phone",
+    "professionOrSchool": "Profession / School",
+    "motivation": "Why do you want to join TAEB?",
+    "submit": "SUBMIT APPLICATION",
+    "sending": "SENDING...",
+    "successMessage": "Application Received!",
+    "successDescription": "We have received your application. We will contact you after review."
+  },
   "footer": {
     "description": "A global NGO that builds professional ties between Turkey and the USA, prioritizing development and cooperation.",
     "quickMenu": "Quick Menu",
