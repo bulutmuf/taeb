@@ -104,7 +104,7 @@ export default function Home() {
                 {t("home.joinUs")}
               </Link>
               <Link
-                to="/projects"
+                to="/internship"
                 className="bg-surface-container-highest text-on-surface px-8 py-4 rounded-lg font-bold text-base hover:bg-surface-container-high transition-colors"
               >
                 {t("home.explorePrograms")}
