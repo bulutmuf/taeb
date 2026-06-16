@@ -11,21 +11,24 @@ export default function Internship() {
   return (
     <>
       <PageSEO titleKey="seo.internshipTitle" descriptionKey="seo.internshipDesc" />
-      <section className="max-w-7xl mx-auto px-6 pt-16 pb-16">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="relative w-full pt-32 pb-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/internship/hero-bg.jpeg"
+            alt={t("internship.headline")}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-surface/40 via-surface/80 to-surface-container-low"></div>
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center text-center">
           <SectionHeading
             badge="TAEB"
             title={t("internship.headline")}
             description={t("internship.description")}
             badgeTheme="surface"
+            alignment="center"
           />
-          <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
-            <img
-              src="/images/about/amerika-turkiye.jpeg"
-              alt={t("internship.headline")}
-              className="h-full w-full object-cover"
-            />
-          </div>
         </div>
       </section>
 
@@ -41,7 +44,7 @@ export default function Internship() {
               <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">{t("internship.stats.sinceLabel")}</span>
             </div>
             <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-white flex flex-col items-center text-center">
-              <span className="text-3xl font-black text-primary mb-2">$2,500</span>
+              <span className="text-3xl font-black text-primary mb-2">$250k</span>
               <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">{t("internship.stats.scholarship")}</span>
             </div>
           </div>
