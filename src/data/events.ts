@@ -188,7 +188,7 @@ export const pastEvents: Event[] = [
     type: "Workshop",
     time: "",
     location: "Online",
-    // image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBTuk4iRYm9wzZ3qVoroJkG4vsuGsyGVjMcWbcGUN3MUEp6XWp_anOyhVWDLggtfxuznkswzTNhZ0xCIrVbV7F9ZG1fxXkMLxsxcqneYob0R9eo_sNFMSmzX7UW6mA9_YXdLPH4ceFkQXn1P9qebtqWyfvb9wreL3JjuOzzoPU-Ui2KPl0sbkIhod9RjRSHT9rOtsNUfXDcjVeJa1niQqo43-3PzJCIDaeNNsJwMvppgCbeyIjzrb_LCWizANW_gJh7a-oFa7Pc6Kw",
+    image: "/images/events/ecology-101.jpeg",
   },
   {
     id: "erden-giritli-ultratrail",
@@ -205,7 +205,7 @@ export const pastEvents: Event[] = [
     type: "Sports",
     time: "",
     location: "Turkey",
-    // image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBr5jV6b99OwukzskPU7Ve49-3etf3WqQ6JL3lwPd0cHLIV2Jn1ZJCehX6agocQa4sFwCetoYW6d8G5YzJ5z5qCr3E_51aWaVl2j2gWfvXtoa-tOi_mxazEUnBeqnZLMaOhbZe9xpXohsG3whT_pgzeGs6B0k-fyVx9kYfciC8OcjzKIJAMceiMTQuCeE48cpWlFybL_o0-TruhPOfxaiYXdIi5BnxkN7blv0PvdGEONQG7_MxY-vUkngy7vBNoXm_komsXV6Ff-rI",
+    image: "/images/events/2019-ultratrail.jpeg",
   },
 ];
 
