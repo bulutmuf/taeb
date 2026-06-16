@@ -32,6 +32,7 @@ export const upcomingEvents: Event[] = [
     type: "Webinar",
     time: "18:00 EST",
     location: "Online",
+    image: "/images/events/visa-info-day.jpeg",
   },
   {
     id: "student-meeting",
@@ -48,6 +49,7 @@ export const upcomingEvents: Event[] = [
     type: "Hybrid",
     time: "14:00 EST",
     location: "Hybrid",
+    image: "/images/events/student-meeting.jpeg",
   },
   {
     id: "naplex-seminar",
@@ -64,6 +66,7 @@ export const upcomingEvents: Event[] = [
     type: "Webinar",
     time: "20:00 EST",
     location: "Online",
+    image: "/images/events/naplex-seminar.jpeg",
   },
 ];
 
